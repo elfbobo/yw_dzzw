@@ -1,0 +1,709 @@
+﻿body {
+    margin: 0px;
+}
+
+img {
+    border: none;
+}
+
+/*****************checkbox样式设置开始(jwj)**********************/
+.TdContent1 {
+    line-height: 20px;
+    font: 12pt Arial,Sans-serif,"宋体";
+    color: #000;
+    padding: 6px 1px 4px 1px;
+    letter-spacing: 0px;
+    text-align: left;
+    vertical-align: middle;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #a3cdf3;
+    border-bottom: 1px solid #a3cdf3;
+    border-left: 1px solid #fff;
+    width: 35%;
+}
+    /****************checkbox样式设置结束(jwj)***********************/
+    .TdContent1 input {
+        background: transparent;
+        border: none;
+        font-family: 'Microsoft YaHei';
+        height: 12px;
+        color: #434142;
+    }
+
+.FormMenu {
+    background: url(../images/htgl_ico_left.gif);
+    height: 35px;
+    width: 100%;
+    color: #1e5f85;
+    font-size: 12px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+    .FormMenu a {
+        color: #1e5f85;
+        font-size: 12px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+
+
+.MenuLeft {
+    float: left;
+    text-align: left;
+    line-height: 30px;
+}
+
+.MenuRight {
+    float: right;
+    text-align: right;
+    line-height: 30px;
+}
+
+    .MenuRight a {
+        margin-right: 7px;
+        height:23px;
+        min-width:80px;
+        padding:3px 5px 3px 5px;
+        border:1px solid #a3cdf3 ;
+        border-radius:3px;
+        background-color:#ffffff;
+        
+    }
+
+
+.SearchWin {
+    position: absolute;
+    border: lightgray solid 1px;
+    background-color: white;
+    left: 5px;
+    top: 33px;
+    display: none;
+    width: 99%;
+    z-index: 100000;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 5px #535658;
+
+}
+
+    .SearchWin input[type='button'] {
+         height:23px;
+        min-width:80px;
+        padding:3px 5px 3px 5px;
+        border:1px solid #a3cdf3 ;
+        border-radius:3px;
+        background-color:#ffffff;
+        color: #1e5f85;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+.table {
+    width: 100%;
+    border-top: 1px solid #a3cdf3;
+    border-right: 1px solid #fff;
+    border-bottom: 1px #a3cdf3;
+    border-left: 1px solid #a3cdf3;
+}
+
+.TdLabel {
+    height: 20px;
+    line-height: 20px;
+    color: #000;
+    padding: 6px 8px 3px 1px;
+    letter-spacing: 1px;
+    text-align: right;
+    vertical-align: middle;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    border-left: 1px solid #fff;
+    line-height: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-size: 9pt;
+    font-family: 'Microsoft YaHei', Arial, Sans-serif;
+    width: 15%;
+    background-color: #f7f7f7;
+}
+
+.TdContent {
+    line-height: 20px;
+    font: 9pt Arial,Sans-serif,"宋体";
+    color: #000;
+    padding: 6px 1px 4px 5px;
+    letter-spacing: 0px;
+    text-align: left;
+    vertical-align: middle;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    border-left: 1px solid #fff;
+    width: 35%;
+}
+
+    .TdContent input[type='text'] {
+        background: transparent;
+        border: 1px solid #999;
+        width: 98%;
+        font-family: 'Microsoft YaHei';
+        height: 23px;
+        color: #434142;
+    }
+
+    .TdContent select {
+        
+        clip: rect(2 85 85 2);
+        font-family: 'Microsoft YaHei';
+        border: 1px solid #999;
+        color: #434142;
+    }
+
+    .TdContent input[type='radio'] {
+        
+        clip: rect(2 85 85 2);
+        width:auto;
+        height:auto;
+        font-family: 'Microsoft YaHei';
+        border: 1px solid #999;
+        color: #434142;
+        margin-right:5px;
+        vertical-align:middle;
+    }
+.TdContent label{
+    vertical-align:middle;
+}
+
+    .TdContent textarea {
+        background: transparent;
+        height: 80px;
+        width: 99%;
+        font-family: 'Microsoft YaHei';
+        border: 1px solid #999;
+        color: #434142;
+    }
+
+.searchbtn {
+    margin: 0 20px 0 0;
+    width: 45px;
+    cursor: pointer;
+}
+
+.searchreset {
+    margin: 0 20px 0 0;
+    width: 45px;
+    cursor: pointer;
+}
+
+.rowTable {
+    width: 100%;
+    border-top: 1px solid #a3cdf3;
+    border-right: 1px solid #fff;
+    border-bottom: 1px #a3cdf3;
+    border-left: 1px solid #a3cdf3;
+}
+
+.RowHead {
+    height: 20px;
+    line-height: 20px;
+    color: #000;
+    padding: 6px 1px 3px 1px;
+    letter-spacing: 1px;
+    text-align: center;
+    vertical-align: middle;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #a3cdf3;
+    border-bottom: 1px solid #a3cdf3;
+    border-left: 1px solid #fff;
+    line-height: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-size: 9pt;
+    font-family: 'Microsoft YaHei', Arial, Sans-serif;
+    height: 30px;
+    vertical-align: top;
+    background-color: #f2f0f0;
+}
+
+.RowContent {
+    line-height: 20px;
+    font: 9pt Arial,Sans-serif,"宋体";
+    color: #000;
+    padding: 6px 1px 4px 1px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #a3cdf3;
+    border-bottom: 1px solid #a3cdf3;
+    border-left: 1px solid #fff;
+}
+
+    .RowContent input {
+        background: transparent;
+        border: 1px solid #999;
+        width: 98%;
+        font-family: 'Microsoft YaHei';
+        height: 23px;
+        color: #434142;
+    }
+
+    .RowContent select {
+       
+        clip: rect(2 85 85 2);
+        width: 99%;
+        font-family: 'Microsoft YaHei';
+        border: 1px solid #999;
+        color: #434142;
+    }
+.RowHead input[type='button'],.RowContent input[type='button']{
+     height:23px;
+        min-width:80px;
+        padding:3px 5px 3px 5px;
+        border:1px solid #a3cdf3 ;
+        border-radius:3px;
+        background-color:#ffffff;
+
+}
+.delRowBtn {
+}
+
+.addRowBtn {
+}
+
+.tabselect {
+    vertical-align: top;
+    text-align: center;
+    height: 30px;
+    line-height: 25px;
+    font-family: 'Microsoft YaHei';
+    font-size: 12px;
+    color: #ff6600;
+    padding: 0 5px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    cursor: pointer;
+    background: url(../images/untitled.png) repeat-x;
+}
+
+.tabnoselect {
+    vertical-align: top;
+    text-align: center;
+    height: 30px;
+    line-height: 25px;
+    font-family: 'Microsoft YaHei';
+    font-size: 12px;
+    color: gray;
+    padding: 0 5px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+
+.fileBtn {
+    vertical-align: top;
+    text-align: center;
+    height: 26px;
+    min-width:50px;
+    line-height: 25px;
+    font-family: 'Microsoft YaHei';
+    font-size: 12px;
+    color: green;
+    padding: 0 5px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    cursor: pointer;
+    background: url(../images/untitled.png) repeat-x;
+    color: #1e5f85;
+        font-size: 12px;
+        font-weight: bold;
+}
+
+.filepro {
+    vertical-align: top;
+    text-align: center;
+    height: 26px;
+    line-height: 25px;
+    font-family: 'Microsoft YaHei';
+    font-size: 12px;
+    color: green;
+    border: 1px solid #999;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.filedoc {
+    background: url(../images/fileico_v4.png) no-repeat -64px -64px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filemaxdoc {
+    background: url(../images/fileico_v4.png) no-repeat -150px -144px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filetxt {
+    background: url(../images/fileico_v4.png) no-repeat -480px -64px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
+
+.filemaxtxt {
+    background: url(../images/fileico_v4.png) no-repeat -225px -219px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filehtml {
+    background: url(../images/fileico_v4.png) no-repeat -288px -64px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filemaxhtml {
+    background: url(../images/fileico_v4.png) no-repeat -675px -144px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.fileexcel {
+    background: url(../images/fileico_v4.png) no-repeat -32px -64px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filemaxexcel {
+    background: url(../images/fileico_v4.png) no-repeat -75px -144px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
+
+.fileppt {
+    background: url(../images/fileico_v4.png) no-repeat -96px -64px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filemaxppt {
+    background: url(../images/fileico_v4.png) no-repeat -225px -144px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
+.file7Z {
+    background: url(../images/fileico_v4.png) no-repeat -128px -64px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filemax7z {
+    background: url(../images/fileico_v4.png) no-repeat -300px -144px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filemaxrar {
+    background: url(../images/fileico_v4.png) no-repeat -375px -144px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filepdf {
+    background: url(../images/fileico_v4.png) no-repeat -512px -64px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filemaxpdf {
+    background: url(../images/fileico_v4.png) no-repeat -300px -219px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.fileflash {
+    background: url(../images/fileico_v4.png) no-repeat -640px -64px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filemaxflash {
+    background: url(../images/fileico_v4.png) no-repeat -600px -219px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filevideo {
+    background: url(../images/fileico_v4.png) no-repeat -864px -219px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filemaxvideo {
+    background: url(../images/fileico_v4.png) no-repeat -225px -294px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
+.filejpg {
+    background: url(../images/fileico_v4.png) no-repeat 0px -96px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+    float: left;
+}
+
+.filemaxjpg {
+    background: url(../images/fileico_v4.png) no-repeat -375px -294px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filegif {
+    background: url(../images/fileico_v4.png) no-repeat -32px -96px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filemaxgif {
+    background: url(../images/fileico_v4.png) no-repeat -450px -294px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filepng {
+    background: url(../images/fileico_v4.png) no-repeat -64px -96px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filemaxpng {
+    background: url(../images/fileico_v4.png) no-repeat -525px -294px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filebmp {
+    background: url(../images/fileico_v4.png) no-repeat -96px -96px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filemaxbmp {
+    background: url(../images/fileico_v4.png) no-repeat -600px -294px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.fileico {
+    background: url(../images/fileico_v4.png) no-repeat -192px -96px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filemaxbmp {
+    background: url(../images/fileico_v4.png) no-repeat -75px -369px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filecommon {
+    background: url(../images/fileico_v4.png) no-repeat -736px -64px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filemaxcommon {
+    background: url(../images/fileico_v4.png) no-repeat -825px -219px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filecontent {
+    width: 100px;
+    border: 1px solid lightblue;
+    text-align: center;
+    float: left;
+    margin: 0 15px 15px 15px;
+    border-radius:5px;
+}
+
+.filetitle {
+    text-decoration:none;
+    color:black;
+    margin: 7px 0 5px 0;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    white-space: ellipsis;
+}
+
+.filesize {
+    text-align: center;
+    color: gray;
+    font-size:12px;
+}
+
+.dialog {
+    border: #999 1px solid;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 5px #535658;
+    position: absolute;
+    left: 100px;
+    top: 90px;
+}
+
+    .dialog .head {
+        border: #e5e5e5 solid 1px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background-attachment: scroll;
+        background-origin: padding-box;
+        background-clip: border-box;
+        background-size: auto;
+        height: 30px;
+        background-color: rgb(243, 243, 243);
+        line-height: 30px;
+        text-align: right;
+    }
+
+    .dialog .title {
+        float: left;
+        line-height: 30px;
+        font-weight: bold;
+    }

@@ -1,0 +1,28 @@
+﻿body {
+}
+
+.blockDiv {
+    display: table-cell;
+    width: 150px;
+    padding: 10px 10px 0px 10px;
+}
+
+.blockIn {
+    border: 1px solid #dadada;
+    height: 40px;
+    line-height: 40px;
+}
+
+    .blockIn div {
+        float: left;
+        margin: 5px 5px 5px 10px;
+    }
+
+.blockCenter {
+    float: left;
+    color: #2977b3;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 10px;
+     
+}

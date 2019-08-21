@@ -1,0 +1,8 @@
+G:\workspace\C# workspace\dzzwcode\ProjectCore\bin\Release\Yawei.ProjectCore.dll
+G:\workspace\C# workspace\dzzwcode\ProjectCore\bin\Release\Yawei.ProjectCore.pdb
+G:\workspace\C# workspace\dzzwcode\ProjectCore\bin\Release\Yawei.DataAccess.dll
+G:\workspace\C# workspace\dzzwcode\ProjectCore\bin\Release\Oracle.DataAccess.dll
+G:\workspace\C# workspace\dzzwcode\ProjectCore\bin\Release\Yawei.DataAccess.pdb
+G:\workspace\C# workspace\dzzwcode\ProjectCore\obj\Release\ProjectCore.csprojResolveAssemblyReference.cache
+G:\workspace\C# workspace\dzzwcode\ProjectCore\obj\Release\Yawei.ProjectCore.dll
+G:\workspace\C# workspace\dzzwcode\ProjectCore\obj\Release\Yawei.ProjectCore.pdb

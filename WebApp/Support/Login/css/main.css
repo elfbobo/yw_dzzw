@@ -1,0 +1,38 @@
+/* CSS Document */
+
+body
+{
+margin:0 auto;
+padding:0;
+width:1024px;
+height:auto;
+color:#666;
+font-size:12px;
+background-color:#3399ff;
+}
+img
+{
+border:0px;
+}
+a
+{
+text-decoration:none;
+color:#000000;
+}
+a:hover
+{
+text-decoration:underline;
+color:#000000;
+}
+.content
+{
+width:1024px;
+background:url(../images/bj.jpg) no-repeat;
+text-align:center;
+height:648px;
+}
+.size-1
+{
+color:#0099cc;
+font-size:12px;
+}

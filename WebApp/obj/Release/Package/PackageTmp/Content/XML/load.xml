@@ -1,0 +1,15 @@
+﻿<option>
+  <ErrorTable>
+    CREATE TABLE [dbo].[Sys_ErrorLog]([Guid] [varchar](36) NOT NULL,[ErrorInfor] [varchar](max) NULL, [ErrorPage] [varchar](200) NULL,[UserGuid] [varchar](36) NULL,[UserName] [varchar](200) NULL,[ErrorTime] [datetime] NULL,CONSTRAINT [PK_SYS_ERRORDAILY] PRIMARY KEY CLUSTERED([Guid] ASC)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+  </ErrorTable>
+  <LoginTable>
+    CREATE TABLE [dbo].[Sys_LoginLog]([Guid] [varchar](36) NOT NULL,[LoginUserGuid] [varchar](36) NULL,[LoginUserCN] [varchar](200) NULL,[LoginUserDN] [varchar](200) NULL,[LoginUserIP] [varchar](50) NULL,[LoginTime] [datetime] NULL,[LoginUserType] [varchar](10) NULL,CONSTRAINT [PK_SYS_LOGDAILY] PRIMARY KEY CLUSTERED([Guid] ASC)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]) ON [PRIMARY]
+  </LoginTable>
+  <OperatorTable>
+    CREATE TABLE [dbo].[Sys_OperatorLog]([Guid] [varchar](36) NOT NULL,[TableName] [varchar](200) NULL,[DataGuid] [varchar](36) NULL,[RefGuid] [varchar](max) NULL,[OperatorType] [varchar](100) NULL,[OperatorTime] [datetime] NULL,[UserGuid] [varchar](36) NULL,[UserDN] [varchar](500) NULL,[UserCN] [varchar](500) NULL,[Status] [int] NULL,[SysStatus] [int] NULL,CONSTRAINT [PK_Busi_OperatorLog] PRIMARY KEY CLUSTERED([Guid] ASC)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+  </OperatorTable>
+  <TableDetails>
+    CREATE PROCEDURE [dbo].[TableDetails] @table varchar(100) as declare @sql varchar(max) set @sql='SELECT FieldName=a.name,FieldPK=case when exists(SELECT 1 FROM sysobjects where xtype=''PK'' and parent_obj=a.id and name in (SELECT name FROM sysindexes    WHERE indid in (SELECT indid FROM sysindexkeys WHERE id = a.id AND colid=a.colid))) then ''是'' else ''否'' end,FieldDataType=b.name,FieldLength=COLUMNPROPERTY(a.id,a.name,''PRECISION''),FieldDecDigits=isnull(COLUMNPROPERTY(a.id,a.name,''Scale''),0),FieldNull=case when a.isnullable=1 then ''空'' else ''不空'' end,FieldValueDefault=isnull(REPLACE(REPLACE(e.text,''('''''',''''),'''''')'',''''),''''),FieldDesc=isnull(g.[value],'''') FROM syscolumns a left join systypes b on a.xusertype=b.xusertype inner join sysobjects d on a.id=d.id  and d.xtype=''U'' and  d.name!= ''dtproperties'' left join syscomments e on a.cdefault=e.id left join sys.extended_properties g on a.id=g.major_id and a.colid=g.minor_id left join sys.extended_properties f on d.id=f.major_id and f.minor_id=0 where d.name='''+@table+''' order by a.id,a.colorder' exec( @sql)
+  </TableDetails>
+</option>
+

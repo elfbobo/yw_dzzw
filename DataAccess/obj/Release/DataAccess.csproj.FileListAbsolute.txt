@@ -1,0 +1,6 @@
+G:\workspace\C# workspace\dzzwcode\DataAccess\bin\Release\Yawei.DataAccess.dll.config
+G:\workspace\C# workspace\dzzwcode\DataAccess\bin\Release\Yawei.DataAccess.dll
+G:\workspace\C# workspace\dzzwcode\DataAccess\bin\Release\Yawei.DataAccess.pdb
+G:\workspace\C# workspace\dzzwcode\DataAccess\bin\Release\Oracle.DataAccess.dll
+G:\workspace\C# workspace\dzzwcode\DataAccess\obj\Release\Yawei.DataAccess.dll
+G:\workspace\C# workspace\dzzwcode\DataAccess\obj\Release\Yawei.DataAccess.pdb

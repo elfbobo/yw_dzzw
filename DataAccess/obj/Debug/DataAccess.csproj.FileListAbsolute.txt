@@ -1,0 +1,20 @@
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\DataAccess\bin\Debug\Yawei.DataAccess.dll.config
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\DataAccess\bin\Debug\Yawei.DataAccess.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\DataAccess\bin\Debug\Yawei.DataAccess.pdb
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\DataAccess\bin\Debug\Oracle.DataAccess.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\DataAccess\obj\Debug\Yawei.DataAccess.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\DataAccess\obj\Debug\Yawei.DataAccess.pdb
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\DataAccess\bin\Debug\Yawei.DataAccess.dll.config
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\DataAccess\bin\Debug\Yawei.DataAccess.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\DataAccess\bin\Debug\Yawei.DataAccess.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\DataAccess\bin\Debug\Oracle.DataAccess.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\DataAccess\obj\Debug\Yawei.DataAccess.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\DataAccess\obj\Debug\Yawei.DataAccess.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+G:\workspace\C# workspace\dzzwcode\DataAccess\bin\Debug\Yawei.DataAccess.dll.config
+G:\workspace\C# workspace\dzzwcode\DataAccess\bin\Debug\Yawei.DataAccess.dll
+G:\workspace\C# workspace\dzzwcode\DataAccess\bin\Debug\Yawei.DataAccess.pdb
+G:\workspace\C# workspace\dzzwcode\DataAccess\bin\Debug\Oracle.DataAccess.dll
+G:\workspace\C# workspace\dzzwcode\DataAccess\obj\Debug\Yawei.DataAccess.dll
+G:\workspace\C# workspace\dzzwcode\DataAccess\obj\Debug\Yawei.DataAccess.pdb

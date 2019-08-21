@@ -1,0 +1,27 @@
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\IndustryManagerCore\bin\Debug\Yawei.IndustryManagerCore.XML
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\IndustryManagerCore\bin\Debug\Yawei.IndustryManagerCore.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\IndustryManagerCore\bin\Debug\Yawei.IndustryManagerCore.pdb
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\IndustryManagerCore\bin\Debug\Yawei.DataAccess.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\IndustryManagerCore\bin\Debug\Oracle.DataAccess.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\IndustryManagerCore\bin\Debug\Yawei.DataAccess.pdb
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\IndustryManagerCore\obj\Debug\IndustryManagerCore.csprojResolveAssemblyReference.cache
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\IndustryManagerCore\obj\Debug\Yawei.IndustryManagerCore.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\IndustryManagerCore\obj\Debug\Yawei.IndustryManagerCore.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\IndustryManagerCore\bin\Debug\Yawei.IndustryManagerCore.XML
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\IndustryManagerCore\bin\Debug\Yawei.IndustryManagerCore.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\IndustryManagerCore\bin\Debug\Yawei.IndustryManagerCore.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\IndustryManagerCore\bin\Debug\Yawei.DataAccess.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\IndustryManagerCore\bin\Debug\Oracle.DataAccess.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\IndustryManagerCore\bin\Debug\Yawei.DataAccess.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\IndustryManagerCore\obj\Debug\IndustryManagerCore.csprojResolveAssemblyReference.cache
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\IndustryManagerCore\obj\Debug\Yawei.IndustryManagerCore.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\IndustryManagerCore\obj\Debug\Yawei.IndustryManagerCore.pdb
+G:\workspace\C# workspace\dzzwcode\IndustryManagerCore\bin\Debug\Yawei.IndustryManagerCore.XML
+G:\workspace\C# workspace\dzzwcode\IndustryManagerCore\bin\Debug\Yawei.IndustryManagerCore.dll
+G:\workspace\C# workspace\dzzwcode\IndustryManagerCore\bin\Debug\Yawei.IndustryManagerCore.pdb
+G:\workspace\C# workspace\dzzwcode\IndustryManagerCore\bin\Debug\Yawei.DataAccess.dll
+G:\workspace\C# workspace\dzzwcode\IndustryManagerCore\bin\Debug\Oracle.DataAccess.dll
+G:\workspace\C# workspace\dzzwcode\IndustryManagerCore\bin\Debug\Yawei.DataAccess.pdb
+G:\workspace\C# workspace\dzzwcode\IndustryManagerCore\obj\Debug\IndustryManagerCore.csprojResolveAssemblyReference.cache
+G:\workspace\C# workspace\dzzwcode\IndustryManagerCore\obj\Debug\Yawei.IndustryManagerCore.dll
+G:\workspace\C# workspace\dzzwcode\IndustryManagerCore\obj\Debug\Yawei.IndustryManagerCore.pdb

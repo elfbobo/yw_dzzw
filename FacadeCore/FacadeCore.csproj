@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D0DE68C0-866A-432A-98AE-971F249FBDDE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Yawei.FacadeCore</RootNamespace>
+    <AssemblyName>Yawei.FacadeCore</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <WarningsAsErrors>0169,0618,1591,1572,1573</WarningsAsErrors>
+    <DocumentationFile>bin\Debug\Yawei.FacadeCore.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\WebApp\Content\Dll\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EncryptUtils.cs" />
+    <Compile Include="FinanceDBFacade.cs" />
+    <Compile Include="ImagesShowFacade.cs" />
+    <Compile Include="Industry\ExamineFacade.cs" />
+    <Compile Include="Industry\InitialInfo.cs" />
+    <Compile Include="MenusLens.cs" />
+    <Compile Include="Project\AssessmentDetailsFacade.cs" />
+    <Compile Include="Project\BudgetDetailFacade.cs" />
+    <Compile Include="Project\BudgetPlanFacade.cs" />
+    <Compile Include="Project\BuildProcedureInfoFacade.cs" />
+    <Compile Include="Project\CancelMilestoneFacade.cs" />
+    <Compile Include="Project\CityExamineFacade.cs" />
+    <Compile Include="Project\CooperatedBuildPersonFacade.cs" />
+    <Compile Include="Project\CstrctProcessFacade.cs" />
+    <Compile Include="Project\EarlyInvestFacade.cs" />
+    <Compile Include="Project\EstimateFacade.cs" />
+    <Compile Include="Project\FormatProjectFacade.cs" />
+    <Compile Include="Project\FundsMonthlyFacade.cs" />
+    <Compile Include="Project\GEClassFacade.cs" />
+    <Compile Include="IndexGetStatisticsFacade.cs" />
+    <Compile Include="Project\GetConfirmFacade.cs" />
+    <Compile Include="Project\IndustrySupervisionFacade.cs" />
+    <Compile Include="Project\InvestFromDetailsFacade.cs" />
+    <Compile Include="Project\InvestOpt.cs" />
+    <Compile Include="Project\JCBuildProcedureInfoFacade.cs" />
+    <Compile Include="Project\OnlineQuizFacade.cs" />
+    <Compile Include="Project\OnlineQuizFacadeCore.cs" />
+    <Compile Include="Project\OutsideEstimatesFacade.cs" />
+    <Compile Include="Project\ProjAdvanceInfoFacade.cs" />
+    <Compile Include="Project\ProjectBaseInfoFacade.cs" />
+    <Compile Include="Project\ProjJointAcceptanceFacade.cs" />
+    <Compile Include="Project\SealedOpinionProjGuidFacade.cs" />
+    <Compile Include="Project\SelectUnitAndPersonFacade.cs" />
+    <Compile Include="Project\ShowConfrimMileStoneFacadeCore.cs" />
+    <Compile Include="Project\SignedContractFacade.cs" />
+    <Compile Include="Project\TrainingFacade.cs" />
+    <Compile Include="Project\UnitsExamineFacade.cs" />
+    <Compile Include="Project\UpdateAdjustmentFacade.cs" />
+    <Compile Include="Project\WorkRemindFacade.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SafeSupFacade.cs" />
+    <Compile Include="Statistic\StatisticInfoFacade.cs" />
+    <Compile Include="Support\CommonForm.cs" />
+    <Compile Include="Support\LogFacade.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Administrative\" />
+    <Folder Include="Supervise\" />
+    <Folder Include="Upcoming\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AdministrativeCore\AdministrativeCore.csproj">
+      <Project>{e8fd94b2-973a-48fe-89ed-4d41a5e26566}</Project>
+      <Name>AdministrativeCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{c90b9112-d488-43ad-91dd-bd10182f6377}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IndustryManagerCore\IndustryManagerCore.csproj">
+      <Project>{8e1b12b6-e89b-4eb6-87eb-fddef8742659}</Project>
+      <Name>IndustryManagerCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectCore\ProjectCore.csproj">
+      <Project>{4b18b26f-fe89-420b-a56e-446368f01554}</Project>
+      <Name>ProjectCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StatisticsCore\StatisticsCore.csproj">
+      <Project>{33130bac-87e6-480e-9f44-e9847d27bc0c}</Project>
+      <Name>StatisticsCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SuperviseCore\SuperviseCore.csproj">
+      <Project>{99fddd6d-6736-493d-9d61-a513809ce086}</Project>
+      <Name>SuperviseCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SupportCore\SupportCore.csproj">
+      <Project>{2993b84d-8af1-41cd-a88d-de717e42407a}</Project>
+      <Name>SupportCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UpcomingCore\UpcomingCore.csproj">
+      <Project>{d7b94b53-a86f-405b-a85c-211168bdd144}</Project>
+      <Name>UpcomingCore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FacadeCore.csproj.vspscc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,644 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Yawei.IndustryManagerCore</name>
+    </assembly>
+    <members>
+        <member name="T:Yawei.IndustryManagerCore.Examine">
+            <summary>
+            考核
+            </summary>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.Examine.GetDataSet(System.String)">
+            <summary>
+            得到DataSet
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yawei.IndustryManagerCore.IMCBaseInfo">
+            <summary>
+            初始化信息
+            </summary>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.CheckNewMileStone(System.String)">
+            <summary>
+            CheckNewMileStone
+            </summary>
+            <param name="ProjGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetDailyCheckUp">
+            <summary>
+            获取所有日常检查附件信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetCheckUp">
+            <summary>
+            获取所有检查附件信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetIvstPaymentUp">
+            <summary>
+            获取所有资金支付附件信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetDeptFilesUp">
+            <summary>
+            获取所有支出预算下达附件信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetAuditNoticeUp">
+            <summary>
+            获取所有审计通知书附件信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetAuditReporUp">
+            <summary>
+            获取所有审计报告附件信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetFileUp">
+            <summary>
+            获取所有招标投标 、计划管理 、会议纪要 附件信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetInvestPlanAccount(System.String)">
+            <summary>
+            获取该项目下年度计划下达计划金额
+            </summary>
+            <param name="ProjGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetFundArrangeAccount(System.String)">
+            <summary>
+            获取该项目下年度计划安排安排金额
+            </summary>
+            <param name="ProjGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetMapUnitName">
+            <summary>
+            获取所有部门名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetSupUnitName">
+            <summary>
+            获取行业监管责任系统下的部门
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetAllProcedureConfig(System.String)">
+            <summary>
+            获取该项目下的所有手续
+            </summary>
+            <param name="ProjGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetAllProcedureChildConfig(System.String)">
+            <summary>
+            获取该项目下的所有子手续
+            </summary>
+            <param name="ProjGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.AddAppProgress(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            插入一条审批进度记录
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="ApprovalGuid"></param>
+            <param name="DateOfCompletion"></param>
+            <param name="ActualCompletionDate"></param>
+            <param name="ApplyForStatus"></param>
+            <param name="SolveResults"></param>
+            <param name="ActualDuration"></param>
+            <param name="UndoneReason"></param>
+            <param name="Problems"></param>
+            <param name="Solutions"></param>
+            <param name="ApprovalChildType"></param>
+            <param name="ProgressSituation"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.UpdateAppProgress(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            修改一条审批进度记录
+            </summary>
+            <param name="PrepGuid"></param>
+            <param name="DateOfCompletion"></param>
+            <param name="ActualCompletionDate"></param>
+            <param name="ApplyForStatus"></param>
+            <param name="SolveResults"></param>
+            <param name="ActualDuration"></param>
+            <param name="UndoneReason"></param>
+            <param name="Problems"></param>
+            <param name="Solutions"></param>
+            <param name="ProgressSituation"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetAppProgress">
+            <summary>
+            获取所有审批进度
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetFirstAppProgress(System.String,System.String,System.String)">
+            <summary>
+            获取该项目下的第一条建的进度月报
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="ApprovalGuid"></param>
+            <param name="ApprovalChildType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetAppProgressByGuid(System.String)">
+            <summary>
+            根据主键获取审批进度信息
+            </summary>
+            <param name="PrepGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetAppProgressByGuid(System.String,System.String)">
+            <summary>
+            根据主键获取审批进度信息
+            </summary>
+            <param name="PrepGuid"></param>
+            <param name="ApprovalChildType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.CstrctScheduleByPlan(System.String,System.String,System.String,System.String)">
+            <summary>
+            生成进度（施工进度）
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="ItemsPlanGuid"></param>
+            <param name="ConstructYear"></param>
+            <param name="ConstructMonth"></param>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetAllEstimateDetailByProjGuid(System.String)">
+            <summary>
+            根据项目主键获取所有的项目概算信息
+            </summary>
+            <param name="ProjGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetCstrctPlanByProjGuid(System.String)">
+            <summary>
+            根据项目主键获取所有的施工计划信息
+            </summary>
+            <param name="ProjGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetCstrctScheduleByProjGuid(System.String)">
+            <summary>
+            根据项目主键获取所有的施工进度信息
+            </summary>
+            <param name="ProjGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.CstrctPlanByEstimateDetail(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            生成计划（施工计划）
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="FundDetailGuid"></param>
+            <param name="FundDetailName"></param>
+            <param name="EstimateCode"></param>
+            <param name="EstimateOrderNum"></param>
+            <param name="TaskNum"></param>
+            <param name="TaskName"></param>
+            <param name="Desp"></param>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetChangeRequest(System.String,System.String)">
+            <summary>
+            读取变更申请信息
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="ApprovalGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetChangeRequest(System.String,System.String,System.String)">
+            <summary>
+            读取变更申请信息
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="ApprovalGuid"></param>
+            <param name="ApprovalChildType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.AddChangeRequest(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            插入变更申请信息
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="ApprovalGuid"></param>
+            <param name="ApprovalChildType"></param>
+            <param name="ApplyReason"></param>
+            <param name="ApplicantGuid"></param>
+            <param name="ApplicantName"></param>
+            <param name="PlanStartDate"></param>
+            <param name="PlanEndDate"></param>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.CheckChangeRequest(System.String,System.String)">
+            <summary>
+            环节是否已经有变更申请信息
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="ApprovalGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.CheckChangeRequest(System.String,System.String,System.String)">
+            <summary>
+            环节是否已经有变更申请信息
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="ApprovalGuid"></param>
+            <param name="ApprovalChildType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.CheckCstrctProcessByGuid(System.String,System.String)">
+            <summary>
+            环节手续是否在建设过程中
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="ApprovalGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.CheckApproveByGuid(System.String,System.String)">
+            <summary>
+            环节手续是否在证照批复中
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="ApprovalGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.CheckApproveByProjGuid(System.String,System.String)">
+            <summary>
+            环节手续是否在项目建议书、项目可行性研究报告、项目初步设计及概算、项目预算中
+            </summary>
+            <param name="Table"></param>
+            <param name="ProjGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetApproveChildStatus(System.String,System.String)">
+            <summary>
+            返回子手续计划
+            </summary>
+            <param name="ProjGuid">项目主键</param>
+            <param name="ApprovalGuid">主手续主键</param>
+            <returns>返回子手续计划</returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetApproveChildDatas(System.String,System.String)">
+            <summary>
+            获取所有子手续数据
+            </summary>
+            <param name="ProjGuid">项目主键</param>
+            <param name="ApprovalGuid">主手续主键</param>
+            <returns>所有子手续数据集</returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.InitialCstrctPlanBySchedule(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            施工进度更新施工计划的计划整体完成情况
+            </summary>
+            <param name="PlanGuid"></param>
+            <param name="BegDate"></param>
+            <param name="CompleteDate"></param>
+            <param name="BudgetAmount"></param>
+            <param name="ActualTaskLimit"></param>
+            <param name="IsComplete"></param>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetCstrctPlanInfoByGuid(System.String)">
+            <summary>
+            根据主键获取施工计划信息
+            </summary>
+            <param name="PlanGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetCstrctPlanPreNum(System.String,System.String)">
+            <summary>
+            获取施工计划的所有前置计划序号
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="Guid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.CheckRefEstimate(System.String)">
+            <summary>
+            检测概算明细参考表是否有该项目的信息
+            </summary>
+            <param name="ProjGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.CheckEstimate(System.String)">
+            <summary>
+            检测概算明细是否有该项目的信息
+            </summary>
+            <param name="ProjGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetContractPayDataSet(System.String,System.String)">
+            <summary>
+            获取形象进度
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="InvestCompleteGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetProjCstrctUnitName(System.String)">
+            <summary>
+            获取项目的建设单位名称
+            </summary>
+            <param name="ProjGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetProjNameByGuid(System.String)">
+            <summary>
+            获取项目名称
+            </summary>
+            <param name="ProjGuid">项目主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetAppConfigInfoByGuid(System.String)">
+            <summary>
+            获取建设过程名称
+            </summary>
+            <param name="AppGuid">建设过程主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.CheckIfContainExpertReview(System.String)">
+            <summary>
+            检查该建设过程是否附带专家评审
+            </summary>
+            <param name="ApprovalGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetCstrctProcessReply(System.String,System.String)">
+            <summary>
+            获取对应手续的批复基本信息
+            </summary>
+            <param name="ProjGuid">项目主键</param>
+            <param name="ApprovalGuid">手续主键</param>
+            <returns>批复基本信息DataTable</returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetProjInfoByGuid(System.String)">
+            <summary>
+            通过项目主键获取项目信息
+            </summary>
+            <param name="ProjGuid">项目主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetMapNameByGuid(System.String)">
+            <summary>
+            根据字典表的主键获取Name
+            </summary>
+            <param name="MapGuid">字典表主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.CheckProjMileStone(System.String)">
+            <summary>
+            检查项目是否已经存在项目里程碑信息
+            </summary>
+            <param name="ProjGuid">项目主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetMapGuidsByDirectoryGuid(System.String,System.String)">
+            <summary>
+            通过DirectoryGuid获取一类型的字典信息
+            </summary>
+            <param name="DirectoryGuid"></param>
+            <param name="OtherSql">其它条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.InitialProjMileStone(System.String,System.String,System.String)">
+            <summary>
+            添加项目里程碑信息
+            </summary>
+            <param name="ProjGuid">项目主键</param>
+            <param name="MapGuid">字典表的主键</param>
+            <param name="Mark">排序</param>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetProjMileStone(System.String)">
+            <summary>
+            获取项目的里程碑信息
+            </summary>
+            <param name="ProjGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.InitialMileStoneDate(System.String,System.String)">
+            <summary>
+            设置项目里程碑的在办时间、办结时间
+            </summary>
+            <param name="MileStoneGuid">里程碑主键</param>
+            <param name="Column">用于区分是在办时间还是办结时间</param>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.InitialMileStoneDate(System.String,System.String,System.String)">
+            <summary>
+            设置项目里程碑的开工时间、竣工时间
+            </summary>
+            <param name="MileStoneGuid">里程碑主键</param>
+            <param name="Column">用于区分是在办时间还是办结时间</param>
+            <param name="WorkTime"></param>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetAppConfigData">
+            <summary>
+            获取Busi_ApprovalConfig的所有信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetAppConfigNameByGuid(System.String)">
+            <summary>
+            根据Busi_ApprovalConfig的主键获取Name
+            </summary>
+            <param name="AppGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetProjTopGuid(System.String)">
+            <summary>
+            通过项目主键获取项目的TopGuid
+            </summary>
+            <param name="ProjGuid">项目主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetProjAffiliationByGuid(System.String)">
+            <summary>
+            通过项目主键获取项目的项目主从关系
+            </summary>
+            <param name="ProjGuid">项目主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.DelDetailByProjGuid(System.String,System.String)">
+            <summary>
+            根据项目主键删除明细
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="Table"></param>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.DelEstimateDetailByProjGuid(System.String)">
+            <summary>
+            根据项目主键删除概算明细
+            </summary>
+            <param name="ProjGuid"></param>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.DelReckonDetailDataByCode(System.String)">
+            <summary>
+            根据Code删除估算明细
+            </summary>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.DelEstimateDetailDataByCode(System.String)">
+            <summary>
+            根据Code删除概算明细
+            </summary>
+            <param name="guid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.DelBudgetDetailDataByCode(System.String)">
+            <summary>
+            根据Code删除预算明细
+            </summary>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.DelEndmateDetailDataByCode(System.String)">
+            <summary>
+            根据Code删除竣工决算概算明细
+            </summary>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.UpdateReckonDetail(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            根据Code修改估算明细
+            </summary>
+            <param name="ProjOrCostName"></param>
+            <param name="InvestAccount"></param>
+            <param name="CostType"></param>
+            <param name="Remark"></param>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.InsertReckonDetail(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            新建估算明细
+            </summary>
+            <param name="TopGuid"></param>
+            <param name="ProjGuid"></param>
+            <param name="ReckonGuid"></param>
+            <param name="ProjOrCostName"></param>
+            <param name="InvestAccount"></param>
+            <param name="Remark"></param>
+            <param name="CostType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.InsertEstimateDetail(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            新建概算明细
+            </summary>
+            <param name="TopGuid"></param>
+            <param name="ProjGuid"></param>
+            <param name="EstimateGuid"></param>
+            <param name="ProjOrCostName"></param>
+            <param name="InvestAccount"></param>
+            <param name="Quantity"></param>
+            <param name="Unit"></param>
+            <param name="InvesAmount"></param>
+            <param name="Remark"></param>
+            <param name="CostType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.UpdateEstimateDetail(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            //根据Code修改概算明细
+            </summary>
+            <param name="ProjOrCostName"></param>
+            <param name="InvestAccount"></param>
+            <param name="Quantity"></param>
+            <param name="Unit"></param>
+            <param name="InvesAmount"></param>
+            <param name="CostType"></param>
+            <param name="Remark"></param>
+            <param name="Code"></param>
+            <param name="Guid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.InsertBudgetDetail(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            新建预算明细
+            </summary>
+            <param name="TopGuid"></param>
+            <param name="ProjGuid"></param>
+            <param name="BudgetGuid"></param>
+            <param name="ProjOrCostName"></param>
+            <param name="SubmitAccount"></param>
+            <param name="AuditingAccount"></param>
+            <param name="AuthorizeAccount"></param>
+            <param name="TrialReductionAccount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.UpdateBudgetDetail(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            修改预算明细
+            </summary>
+            <param name="ProjOrCostName"></param>
+            <param name="SubmitAccount"></param>
+            <param name="AuditingAccount"></param>
+            <param name="AuthorizeAccount"></param>
+            <param name="TrialReductionAccount"></param>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.InsertEndmateDetail(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            新建竣工决算概算明细
+            </summary>
+            <param name="TopGuid"></param>
+            <param name="ProjGuid"></param>
+            <param name="EstimateGuid"></param>
+            <param name="ProjOrCostName"></param>
+            <param name="InvestAccount"></param>
+            <param name="Quantity"></param>
+            <param name="Unit"></param>
+            <param name="InvesAmount"></param>
+            <param name="Remark"></param>
+            <param name="CostType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.UpdateEndmateDetail(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            根据Code修改竣工决算概算明细
+            </summary>
+            <param name="ProjOrCostName"></param>
+            <param name="InvestAccount"></param>
+            <param name="Quantity"></param>
+            <param name="Unit"></param>
+            <param name="InvesAmount"></param>
+            <param name="CostType"></param>
+            <param name="Remark"></param>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.ExecNonQuery(System.String)">
+            <summary>
+            获取DataSet结果集
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.IndustryManagerCore.IMCBaseInfo.GetProjNameByFileNo(System.String)">
+            <summary>
+            通过预算下达文号找到下达的项目
+            </summary>
+            <param name="FileNo"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

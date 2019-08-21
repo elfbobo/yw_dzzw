@@ -1,0 +1,13 @@
+G:\workspace\C# workspace\dzzwcode\SupportCore\bin\Release\Yawei.SupportCore.dll
+G:\workspace\C# workspace\dzzwcode\SupportCore\bin\Release\Yawei.SupportCore.pdb
+G:\workspace\C# workspace\dzzwcode\SupportCore\bin\Release\Yawei.DataAccess.dll
+G:\workspace\C# workspace\dzzwcode\SupportCore\bin\Release\Yawei.Domain.dll
+G:\workspace\C# workspace\dzzwcode\SupportCore\bin\Release\Yawei.SSOLib.Common.dll
+G:\workspace\C# workspace\dzzwcode\SupportCore\bin\Release\Yawei.SSOLib.Cryptography.dll
+G:\workspace\C# workspace\dzzwcode\SupportCore\bin\Release\Yawei.SSOLib.PSO.dll
+G:\workspace\C# workspace\dzzwcode\SupportCore\bin\Release\Oracle.DataAccess.dll
+G:\workspace\C# workspace\dzzwcode\SupportCore\bin\Release\Yawei.DataAccess.pdb
+G:\workspace\C# workspace\dzzwcode\SupportCore\bin\Release\Yawei.Domain.pdb
+G:\workspace\C# workspace\dzzwcode\SupportCore\obj\Release\SupportCore.csprojResolveAssemblyReference.cache
+G:\workspace\C# workspace\dzzwcode\SupportCore\obj\Release\Yawei.SupportCore.dll
+G:\workspace\C# workspace\dzzwcode\SupportCore\obj\Release\Yawei.SupportCore.pdb

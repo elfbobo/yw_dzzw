@@ -1,0 +1,536 @@
+﻿/*
+author:田飞飞
+ie 7  拖动会出现闪动 ie6 未测
+更新历史:
+1、增加列拖动 2、表格高度自定义
+2013-9-30 1、增加  Property(属性表格)  见demo
+treeGrid 待开发
+*/
+
+(function ($) {
+    $.fn.extend({
+        Grid: function (options) {
+            var defaults = {
+                columns: [],
+                sortName: "",
+                order: "",
+                ajaxUrl: "",
+                rowsData: [],
+                request: "ajax",
+                connectionName: "",
+                connectionString: "",
+                providerName: "",
+                tableName: "",
+                condition: "",
+                pageCount: 0,
+                width: "100%",
+                height: 0,
+                idField: "",
+                page: 1,
+                where: "",
+                pageSelect: [],
+                SelectedRows: function () { },
+                CannelRows: function () { },
+                BindBefore: function (data) { return data; }
+            }
+            var options = $.extend(defaults, options);
+            return this.each(function () {
+                var opt = options;
+
+                var table, headerTable;
+                var tableContent = $(this);
+                if (tableContent.find("table").length > 1) {
+                    table = tableContent.find("table").eq(1);
+                    headerTable = tableContent.find("table").eq(0);
+                    headerTable.find(":checkbox,:radio").attr("checked", false);
+                }
+                else {
+                    table = $("<table />");
+                    headerTable = $("<table />");
+                    headerTable.append(SetListHeader(opt.columns));
+                    headerTable.attr({ "border": "0", "cellpadding": "0", "cellspacing": "0" }).css({ "width": "100%" });;
+                    tableContent.append(headerTable);
+                }
+                var total = 0;
+                opt.oldCount = opt.pageCount;
+
+                table.attr("border", "0");
+                table.attr("cellpadding", "0");
+                table.attr("cellspacing", "0");
+                table.css({ "width": "100%" });
+                table.addClass("datagrid");
+                tableContent.addClass("gridcontent");
+                tableContent.width(opt.width);
+                tableContent.height(opt.height);
+                table.data("opt", opt);
+
+                if (table.find("tr").length <= 0) {
+                    var divContent = $("<div />");
+                    divContent.css({ "overflow-x": "hidden" }).addClass("gridtablecontent");
+                    divContent.append(table);
+                    if (opt.height > 0)
+                        divContent.height(tableContent.height() - 35 - 28);
+
+                    tableContent.append(divContent);
+                }
+                if (opt.request == "data") {
+                    setListContent(opt.rowsData, opt.columns);
+                }
+                else {
+                    gridContent(opt.order, opt.sortName);
+                }
+
+
+                //   SetTaleEquel(headerTable, table);
+
+                function SetTaleEquel(tableF, eqTable) {
+
+                    //tableF.width(Math.round((eqTable.width() / eqTable.parent().width()) * 100) + "%");
+                    //var tr = tableF.find("tr");
+                    //var td = eqTable.find("tr").eq(0).find("td");
+                    //tr.find("td").each(function (i) {
+
+                    //    if ($(this).width() > 0)
+                    //    {
+                    //        td.eq(i).width($(this).width());
+                    //    }
+                    //});
+
+                }
+
+                //设置表头
+                function SetListHeader(columns) {
+                    var tr = $("<tr />");
+                    $.each(columns, function (i, obj) {
+                        if (typeof (obj) != "undefined") {
+                            var td = $("<td />");
+                            td.addClass("gridHeader")
+                            if (typeof (obj.width) != "undefined") {
+                                td.css("width", obj.width);
+                            }
+
+                            if (obj.checkbox) {
+                                $("<input />", { id: "checkall", type: "checkbox", name: "name" + i }).bind("click", function () { checkAll(this); }).appendTo(td);
+                            }
+                            else {
+                                if (obj.drag) {
+                                    if (i < columns.length - 1) {
+                                        var span = $("<label />", { "class": "resizeDragClass" });
+                                        var img = $('<img />');
+                                        span.html("&nbsp;");
+                                        drag(span);
+                                        td.html(span);
+                                    }
+                                    if (obj.order) {
+                                        var orDiv = $("<div  style='padding-top:7px;height:18px;overflow:hidden;width:97%;flaot:left'></div>");
+                                        orDiv.html(clumOrder("desc", obj.field, obj.name));
+                                        td.append(orDiv);
+                                    }
+                                    else {
+                                        td.append("<div  style='padding-top:7px;height:18px;overflow:hidden;width:97%;flaot:left'>" + obj.name + "</div>");
+                                    }
+                                }
+                                else {
+                                    if (obj.order) {
+                                        td.html(clumOrder("desc", obj.field, obj.name));
+                                    }
+                                    else
+                                        td.html(obj.name);
+                                }
+                            }
+                            tr.append(td);
+                        }
+                    });
+                    return tr;
+                }
+
+                //设置表格内容  
+                function gridContent() {
+                    GetData(opt.idField, opt.ajaxUrl, arguments[1], arguments[0], opt.connectionName, opt.connectionString, opt.providerName, opt.tableName, opt.condition, opt.pageCount, opt.where, opt.columns, opt.page);
+                    // pageSize("top")
+                    pageSize("b");
+                }
+                function gridContentData() {
+                    GetData(opt.idField, opt.ajaxUrl, arguments[1], arguments[0], opt.connectionName, opt.connectionString, opt.providerName, opt.tableName, opt.condition, opt.pageCount, opt.where, opt.columns, opt.page);
+
+                }
+
+                //设置排序以及页码
+                function pageSize() {
+                    var div = $("<div />", { "class": "gridfooter" });
+                    table.parent().next().remove();
+                    if (opt.pageSelect.length > 0) {
+                        var select = $("<select />");
+                        select.append("<option>" + opt.oldCount + "</option>");
+                        $.each(opt.pageSelect, function (i, dat) {
+                            if (opt.oldCount != dat) {
+                                select.append("<option>" + dat + "</option>");
+                            }
+                        });
+                        select.change(function () {
+                            opt.pageCount = $(this).val();
+                            gridContentData(opt.order, opt.sortName);
+                            div.find("div").remove();
+                            div.append(SetPageGo());
+                            $(this).val(opt.pageCount);
+                            // SetTaleEquel(headerTable, table);
+                        });
+                        var sp = $("<span />").css({ "line-height": "57px", "float": "left" });
+                        sp.html(select);
+                        select.before("<div  style='display:inline;color: #2671ae;font-size: 14px;'>全选/反选</div>&nbsp;&nbsp;&nbsp;&nbsp;每页&nbsp;");
+                        select.after("&nbsp;条目数");
+                        div.append(sp);
+                    }
+                    //div.append(spn);
+                    div.append(SetPageGo());
+                    tableContent.append(div);
+                    // SetTaleEquel(headerTable, table);
+                }
+                //排序↑↓
+                function clumOrder(orderType, sortName, text) {
+                    var spn = $("<span />").css("cursor", "pointer");
+                    spn.html(text);
+                    spn.attr("order", orderType);
+                    spn.bind("click", function () {
+                        spn.text(text);
+                        var spanText = $(".orderF").text();
+                        if (spanText.indexOf("↑") > -1 || spanText.indexOf("↓") > -1) {
+                            spanText = spanText.replace("↑", "").replace("↓", "");
+                            $(".orderF").text(spanText);
+                            $(".orderF").removeClass("orderF");
+                        }
+                        if ($(this).attr("order") == "asc") {
+                            $(this).attr("order", "desc");
+                            spn.html(spn.html() + "&nbsp;↓");
+                        }
+                        else {
+                            $(this).attr("order", "asc");
+                            spn.html(spn.html() + "&nbsp;↑");
+                        }
+                        gridContent($(this).attr("order"), sortName);
+                        spn.addClass("orderF");
+                        SetTaleEquel(headerTable, table);
+                    });
+
+                    return spn;
+                }
+
+                //跳页
+                function SetPageGo() {
+                    var div = $('<div />').css({ "float": "right", "width": "440px", "line-height": "57px" });
+                    div.html("共有记录" + total + "条&nbsp;" + opt.page + "/" + Math.ceil(parseInt(total) / opt.pageCount));
+                    $("<span />", { "class": "fPage" }).text("首页").bind("click", function () { firstPage(); }).appendTo(div);
+                    $("<span />", { "class": "prevPage" }).text("上一页").bind("click", function () { prevPage(); }).appendTo(div);
+                    $("<span />", { "class": "nextPage" }).text("下一页").bind("click", function () { nextPage(); }).appendTo(div);
+                    $("<span />", { "class": "ePage" }).text("末页").bind("click", function () { endPage(); }).appendTo(div);
+                    $("<input />", { "class": "pageText" }).css({ width: 35, height: 15 }).appendTo(div);
+                    $("<span />", { "class": "pageGo" }).text("跳转").bind("click", function () { pageGo(this); }).appendTo(div);
+
+                    return div;
+
+                }
+                //全选
+                function checkAll(obj) {
+                    if ($(obj).attr("checked")) {
+                        $("#" + tableContent.attr("id") + " [name='" + $(obj).attr("name") + "']").attr("checked", true).parent().parent().addClass("griddatahover");
+
+                    }
+                    else {
+                        $("#" + tableContent.attr("id") + " [name='" + $(obj).attr("name") + "']").attr("checked", false).parent().parent().removeClass("griddatahover");
+
+                    }
+                }
+
+                //首页
+                function firstPage() {
+                    if (opt.page != 1) {
+                        opt.page = 1;
+                        GetData(opt.idField, opt.ajaxUrl, opt.sortName, opt.order, opt.connectionName, opt.connectionString, opt.providerName, opt.tableName, opt.condition, opt.pageCount, opt.where, opt.columns, opt.page);
+
+                        pageSize();
+                    }
+                }
+                //末页
+                function endPage() {
+                    if (opt.page < Math.ceil(parseInt(total) / opt.pageCount)) {
+                        opt.page = Math.ceil(parseInt(total) / opt.pageCount);
+                        GetData(opt.idField, opt.ajaxUrl, opt.sortName, opt.order, opt.connectionName, opt.connectionString, opt.providerName, opt.tableName, opt.condition, opt.pageCount, opt.where, opt.columns, opt.page);
+
+                        pageSize();
+                    }
+                }
+
+                //上一页
+                function prevPage() {
+                    if (opt.page > 1) {
+                        opt.page -= 1;
+                        GetData(opt.idField, opt.ajaxUrl, opt.sortName, opt.order, opt.connectionName, opt.connectionString, opt.providerName, opt.tableName, opt.condition, opt.pageCount, opt.where, opt.columns, opt.page);
+
+                        pageSize();
+                    }
+                }
+
+                //下一页
+                function nextPage() {
+
+                    if (opt.page < Math.ceil(parseInt(total) / opt.pageCount)) {
+                        opt.page += 1;
+                        GetData(opt.idField, opt.ajaxUrl, opt.sortName, opt.order, opt.connectionName, opt.connectionString, opt.providerName, opt.tableName, opt.condition, opt.pageCount, opt.where, opt.columns, opt.page);
+
+                        pageSize();
+                    }
+                }
+                //跳页
+                function pageGo(obj) {
+
+                    if (!isNaN($(obj).prev(".pageText").val())) {
+                        var paged = parseInt($(obj).prev(".pageText").val());
+                        if (paged >= 1 && paged <= Math.ceil(parseInt(total) / opt.pageCount) && paged != opt.page) {
+                            opt.page = paged;
+                            GetData(opt.idField, opt.ajaxUrl, opt.sortName, opt.order, opt.connectionName, opt.connectionString, opt.providerName, opt.tableName, opt.condition, opt.pageCount, opt.where, opt.columns, opt.page);
+
+                            pageSize();
+                        }
+                    }
+                }
+
+
+                //ajax请求数据
+                function GetData(idField, ajaxUrl, sort, order, connectionName, connectionString, providerName, tableName, condition, pageCount, where, columns, page) {
+                    $.ajax({
+                        type: "POST",
+                        url: ajaxUrl,
+                        dataType: "json",
+                        async: false,
+
+                        data: { idField: idField, sort: sort, order: order, connectionName: connectionName, connectionString: connectionString, providerName: providerName, tableName: tableName, condition: condition, rows: pageCount, page: page, where: where },
+                        success: function (data) {
+                            total = data.total;
+                            var dataRow = data.rows;
+                            var newJson = opt.BindBefore(dataRow);
+                            if (newJson) {
+                                dataRow = newJson;
+                            }
+                            setListContent(dataRow, columns);
+                            //table.append(str);
+                        },
+                        error: function (data) {
+                            alert("数据请求错误，错误类型：" + data.status);
+                        }
+
+                    });
+                }
+
+                //设置列表内容
+                function setListContent(dataRow, columns) {
+
+                    var trStr = "";
+                    table.find("tr").remove();
+                    $.each(dataRow, function (j, rowDat) {
+                        var tr = $("<tr  />");
+                        if (j % 2 != 0)
+                            tr.addClass("tabletr");
+                        tr.hover(function () { $(this).addClass("griddatahover"); }, function () {
+                            if ($(this).find(":checkbox,:radio").attr("checked") != "checked")
+                                $(this).removeClass("griddatahover");
+
+                        });
+
+                        tr.data("data", rowDat);
+                        $.each(columns, function (i, colDat) {
+                            if (typeof (colDat) != "undefined") {
+                                var td = $("<td />", { "class": "gridlabel" });
+
+                                td.width(colDat.width);
+                                if (colDat.field) {
+                                    for (key in rowDat) {
+                                        if (colDat.field.toLowerCase() == key.toLowerCase()) {
+                                            if (colDat.align) {
+                                                td.css({ "text-align": colDat.align });
+                                            }
+                                            if (colDat.checkbox) {
+                                                var input = $("<input />", { "type": "checkbox", "name": "name" + i }).val(rowDat[key]);
+                                                input.click(function () {
+                                                    if ($(this).attr("checked") == "checked") {
+                                                        opt.SelectedRows(rowDat);
+                                                        tr.addClass("griddatahover");
+                                                    }
+                                                    else {
+                                                        opt.CannelRows(rowDat);
+                                                    }
+                                                });
+                                                td.append(input);
+                                            }
+                                            else if (colDat.radiobox) {
+                                                var input = $("<input />", { "type": "radio", "name": "name" + i }).val(rowDat[key]);
+                                                input.click(function () {
+                                                    if ($(this).attr("checked") == "checked") {
+                                                        table.find(".griddatahover").removeClass("griddatahover");
+                                                        tr.addClass("griddatahover");
+                                                    }
+                                                });
+                                                td.append(input);
+                                            }
+                                            else {
+                                                if (colDat.render && typeof (colDat.render) == "function") {
+                                                    trStr = colDat.render(rowDat[key].replace('0:00:00', ''), rowDat, key);
+                                                    td.html(td.html() + trStr);
+                                                }
+                                                else {
+                                                    td.html(rowDat[key].replace('0:00:00', ''));
+                                                }
+                                                td.click(function (event) {
+
+                                                    if ($(event.target).is("td")) {
+                                                        var checkbox = $(this).parent().find(":checkbox[name*='name']").eq(0);
+                                                        if (checkbox.attr("checked") == "checked") {
+                                                            checkbox.attr("checked", false);
+                                                            opt.CannelRows(rowDat);
+                                                        }
+                                                        else {
+                                                            checkbox.attr("checked", "checked");
+                                                            opt.SelectedRows(rowDat);
+                                                        }
+                                                        checkbox = $(this).parent().find(":radio[name*='name']").eq(0);
+                                                        if (checkbox.attr("checked") == "checked") {
+                                                            checkbox.attr("checked", false);
+                                                        }
+                                                        else {
+                                                            table.find(".tablehover").removeClass("griddatahover");
+                                                            checkbox.attr("checked", "checked");
+                                                            tr.addClass("griddatahover");
+                                                        }
+                                                    }
+                                                });
+                                            } tr.append(td);
+                                            break;
+                                        }
+
+                                    }
+                                }
+                                else
+                                    tr.append(td);
+                            }
+                        });
+                        table.append(tr);
+                    });
+
+                    if (table.find("tr").length <= 0) {
+                        table.append("<tr><td class='gridlabel' colspan='" + columns.length + "'>暂无数据</td></tr>");
+                    }
+
+                }
+
+                function drag(obj) {
+                    var dragEle = $(obj);
+                    getEleWidth = function (ele) {
+                        return ele.innerWidth();
+                    }
+
+                    setEleWidth = function (ele, width) {
+                        ele.width(width);
+                        var index = ele.index();
+                        var table = ele.parent().parent().parent().next();
+                        var tr = table.find("tr").eq(0);
+                        tr.find("td").eq(index).width(width);
+                    }
+                    dragEle.mousedown(function () {
+
+                        var d = document; var evt = window.event;
+                        var lastX = evt.clientX;
+                        var td = dragEle.get(0);
+                        var wd = getEleWidth(dragEle.parent()) + getEleWidth(dragEle.parent().next());
+                        if (td.setCapture)
+                            td.setCapture();
+                        else if (window.captureEvents)
+                            window.captureEvents(Event.MOUSEMOVE | Event.MOUSEUP);
+                        document.onmousemove = function () {
+                            var evt = window.event;
+                            var t = evt.clientX - lastX;
+                            if (getEleWidth(dragEle.parent()) + getEleWidth(dragEle.parent().next()) > wd) {
+                                setEleWidth(dragEle.parent().next(), wd - getEleWidth(dragEle.parent()));
+                                return;
+                            }
+                            if (t > 0) {
+                                if (dragEle.parent().next().width() < 30)
+                                    return;
+                                setEleWidth(dragEle.parent(), getEleWidth(dragEle.parent()) + t);
+                                setEleWidth(dragEle.parent().next(), getEleWidth(dragEle.parent().next()) - t);
+                            } else {//left 
+                                if (dragEle.parent().width() < 30)
+                                    return;
+                                setEleWidth(dragEle.parent(), getEleWidth(dragEle.parent()) + t);
+                                setEleWidth(dragEle.parent().next(), getEleWidth(dragEle.parent().next()) - t);
+                            }
+
+                            lastX = evt.clientX;
+                        };
+                        document.onmouseup = function () {
+                            var td = dragEle.get(0);
+                            if (td.releaseCapture)
+                                td.releaseCapture();
+                            else if (window.captureEvents)
+                                window.captureEvents(Event.MOUSEMOVE | Event.MOUSEUP);
+                            document.onmousemove = null;
+                            document.onmouseup = null;
+                        };
+                    });
+                }
+            });
+        },
+        GetSelection: function (type) {
+
+            var arry = new Array();
+            var table = $(this).find("table");
+
+            if (type.toLowerCase() == "single") {
+
+                table.find("[id!='checkall'][name*='name']:checked").each(function () {
+                    if ($(this).attr("value"))
+                        arry[arry.length] = $(this).val();
+                });
+            }
+            if (type.toLowerCase() == "total") {
+                table.find("[id!='checkall'][name*='name']:checked").each(function () {
+                    if ($(this).attr("value"))
+                        arry[arry.length] = $(this).parent().parent().data("data");
+                });
+            }
+            return arry;
+        },
+        DetelteRow: function (url) {
+            var tableContent = $(this);
+            var table = $(this).find("table").eq(1);
+            if (confirm("确定要删除吗")) {
+                var guids = $(this).GetSelection("single");
+                if (guids.length <= 0) {
+                    alert("请选择要删除的行"); return;
+                }
+                $.ajax({
+                    url: url,
+                    type: "post",
+                    data: { tableName: cfg.tableName, where: " and guid in('" + guids.join("','") + "')" },
+                    dataType: "text",
+
+                    success: function (data) {
+                        if (data != "False") {
+                            alert("删除成功");
+                            var options = table.data("opt");
+                            tableContent.Grid(options);
+                        }
+                    },
+                    error: function (msg)
+                    { alert("请求数据失败" + msg.status); }
+                });
+            }
+        },
+        Refresh: function () {
+            var tableContent = $(this);
+            $(this).find("table").eq(0).find(":checkbox,:radio").attr("checked", false);
+            var table = $(this).find("table").eq(1);
+            var options = table.data("opt");
+            tableContent.Grid(options);
+        }
+    });
+})(jQuery);
+

@@ -1,0 +1,466 @@
+/*
+Uploadify
+Copyright (c) 2012 Reactive Apps, Ronnie Garcia
+Released under the MIT License <http://www.opensource.org/licenses/mit-license.php> 
+*/
+
+.uploadify {
+	position: relative;
+	margin-bottom: 1em;
+}
+.uploadify-button {
+	background-color: #505050;
+	background-image: linear-gradient(bottom, #505050 0%, #707070 100%);
+	background-image: -o-linear-gradient(bottom, #505050 0%, #707070 100%);
+	background-image: -moz-linear-gradient(bottom, #505050 0%, #707070 100%);
+	background-image: -webkit-linear-gradient(bottom, #505050 0%, #707070 100%);
+	background-image: -ms-linear-gradient(bottom, #505050 0%, #707070 100%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, #505050),
+		color-stop(1, #707070)
+	);
+	background-position: center top;
+	background-repeat: no-repeat;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	border: 2px solid #808080;
+	color: #FFF;
+	font: bold 12px Arial, Helvetica, sans-serif;
+	text-align: center;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	width: 100%;
+}
+.uploadify:hover .uploadify-button {
+	background-color: #606060;
+	background-image: linear-gradient(top, #606060 0%, #808080 100%);
+	background-image: -o-linear-gradient(top, #606060 0%, #808080 100%);
+	background-image: -moz-linear-gradient(top, #606060 0%, #808080 100%);
+	background-image: -webkit-linear-gradient(top, #606060 0%, #808080 100%);
+	background-image: -ms-linear-gradient(top, #606060 0%, #808080 100%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, #606060),
+		color-stop(1, #808080)
+	);
+	background-position: center bottom;
+}
+.uploadify-button.disabled {
+	background-color: #D0D0D0;
+	color: #808080;
+}
+.uploadify-queue {
+	margin-bottom: 1em;
+}
+.uploadify-queue-item {
+	background-color: #F5F5F5;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	float:left;
+	margin-left:2px;
+	border-radius: 3px;
+	font: 11px Verdana, Geneva, sans-serif;
+	max-width: 300px;
+    max-height:15px;
+	padding: 10px;
+}
+.uploadify-error {
+	background-color: #FDE5DD !important;
+}
+.uploadify-queue-item .cancel a {
+	background: url(uploadify-cancel.png) 0 0 no-repeat;
+	float: right;
+	height:	16px;
+	text-indent: -9999px;
+	width: 16px;
+}
+.uploadify-queue-item.completed {
+	background-color: #E5E5E5;
+}
+.uploadify-progress {
+	background-color: #E5E5E5;
+	margin-top: 10px;
+	width: 100%;
+}
+.uploadify-progress-bar {
+	background-color: #0099FF;
+	height: 3px;
+	width: 1px;
+}
+
+
+.fileBtn {
+    vertical-align: top;
+    text-align: center;
+    height: 26px;
+    line-height: 25px;
+    font-family: 'Microsoft YaHei';
+    font-size: 12px;
+    color: green;
+    padding: 0 5px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    cursor: pointer;
+    background: url(untitled.png) repeat-x;
+}
+
+.filepro {
+    vertical-align: top;
+    text-align: center;
+    height: 26px;
+    line-height: 25px;
+    font-family: 'Microsoft YaHei';
+    font-size: 12px;
+    color: green;
+    border: 1px solid #999;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.filedoc {
+    background: url(fileico_v4.png) no-repeat -64px -64px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filemaxdoc {
+    background: url(fileico_v4.png) no-repeat -150px -144px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filetxt {
+    background: url(fileico_v4.png) no-repeat -480px -64px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
+
+.filemaxtxt {
+    background: url(fileico_v4.png) no-repeat -225px -219px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filehtml {
+    background: url(fileico_v4.png) no-repeat -288px -64px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filemaxhtml {
+    background: url(fileico_v4.png) no-repeat -675px -144px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.fileexcel {
+    background: url(fileico_v4.png) no-repeat -32px -64px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filemaxexcel {
+    background: url(fileico_v4.png) no-repeat -75px -144px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
+
+.fileppt {
+    background: url(fileico_v4.png) no-repeat -96px -64px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filemaxppt {
+    background: url(fileico_v4.png) no-repeat -225px -144px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
+.file7Z {
+    background: url(fileico_v4.png) no-repeat -128px -64px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filemax7z {
+    background: url(fileico_v4.png) no-repeat -300px -144px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filemaxrar {
+    background: url(fileico_v4.png) no-repeat -375px -144px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filepdf {
+    background: url(fileico_v4.png) no-repeat -512px -64px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filemaxpdf {
+    background: url(fileico_v4.png) no-repeat -300px -219px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.fileflash {
+    background: url(fileico_v4.png) no-repeat -640px -64px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filemaxflash {
+    background: url(fileico_v4.png) no-repeat -600px -219px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filevideo {
+    background: url(fileico_v4.png) no-repeat -864px -219px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filemaxvideo {
+    background: url(fileico_v4.png) no-repeat -225px -294px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
+.filejpg {
+    background: url(fileico_v4.png) no-repeat 0px -96px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+    float: left;
+}
+
+.filemaxjpg {
+    background: url(fileico_v4.png) no-repeat -375px -294px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filegif {
+    background: url(fileico_v4.png) no-repeat -32px -96px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filemaxgif {
+    background: url(fileico_v4.png) no-repeat -450px -294px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filepng {
+    background: url(fileico_v4.png) no-repeat -64px -96px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filemaxpng {
+    background: url(fileico_v4.png) no-repeat -525px -294px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filebmp {
+    background: url(fileico_v4.png) no-repeat -96px -96px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filemaxbmp {
+    background: url(fileico_v4.png) no-repeat -600px -294px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.fileico {
+    background: url(fileico_v4.png) no-repeat -192px -96px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filemaxbmp {
+    background: url(fileico_v4.png) no-repeat -75px -369px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filecommon {
+    background: url(fileico_v4.png) no-repeat -736px -64px;
+    height: 32px;
+    width: 32px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filemaxcommon {
+    background: url(fileico_v4.png) no-repeat -825px -219px;
+    height: 75px;
+    width: 75px;
+    margin: 7px 0 0 4px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.filecontent {
+    width: 100px;
+    border: 1px solid lightblue;
+    text-align: center;
+    float: left;
+    margin: 0 15px 15px 15px;
+    border-radius:5px;
+}
+
+.filetitle {
+    text-decoration:none;
+    color:black;
+    margin: 7px 0 5px 0;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    white-space: ellipsis;
+}
+
+.filesize {
+    text-align: center;
+    color: gray;
+    font-size:12px;
+}
+

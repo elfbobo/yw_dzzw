@@ -1,0 +1,194 @@
+﻿@charset "gb2312";
+/* CSS Document */
+
+/**************************Grid***********************************************/
+.gridcontent {
+    border: 1px solid #95B8E7;
+    text-align: center;
+    margin-left: 2px;
+    margin-right: 2px;
+   
+}
+
+
+.gridHeader {
+    background-color: #6fb3e0;
+    color: #ffffff;
+    height: 31px;
+    text-align: center;
+    border-right: 1px solid #e9e9e9;
+   
+}
+
+    .gridHeader:last-child {
+        border-right: 1px solid #E0ECFF;
+    }
+
+.gridlabel {
+    font-size: 12px;
+    height: 30px;
+    text-align: center;
+    border-right: 1px dashed lightgray;
+    border-bottom: 1px dashed lightgray;
+    padding-left: 3px;
+}
+
+    .gridlabel input {
+        color: #DACEC0;
+    }
+
+    .gridlabel a {
+        color: Black;
+        text-decoration: none;
+    }
+
+
+
+.gridfooter {
+    width: 100%;
+    background-color: #eff3f8;
+    border-left: 1px solid #e9e9e9;
+    border-right: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+    height: 57px;
+    line-height:57px;
+    margin-top: -26px;
+}
+
+    .gridfooter span {
+        height: 33px;
+        line-height: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+.resizeDragClass {
+    text-align: right;
+    width: 2%;
+    margin: 0px 0 0px 0;
+    line-height: 25px;
+    border: 0px;
+    float: right;
+    cursor: e-resize;
+    z-index: 99999999;
+    background-color: inherit;
+}
+
+.gridtablecontent {
+    background-color: #fff;
+}
+
+
+.datagrid {
+    table-layout: fixed;
+    background-color: #fff;
+}
+
+
+    .datagrid td {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+
+
+
+.tabletr {
+    background-color: #f7faff;
+}
+
+.griddatahover {
+    background-color: #fffecf;
+}
+
+/**************************Property***********************************************/
+
+.property {
+    border: #99bbe8 1px solid;
+}
+
+.propertytd {
+    border-bottom: #ccc 1px dotted;
+    border-right: #ccc 1px dotted;
+    width: 50%;
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding-left: 5px;
+    height: 23px;
+}
+
+.propertytitle {
+    background-color: #EFEFEF;
+    text-align: left;
+    color: blue;
+    font-size: 12px;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+}
+
+.propertytable {
+    width: 100%;
+    border-top: #ccc 1px dotted;
+    border-left: #ccc 1px dotted;
+}
+
+.expand {
+    background-image: url(images/expand.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 10px;
+}
+
+.collapse {
+    background-image: url(images/collapse.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 10px;
+}
+
+
+
+
+/**************************treegrid*********************************/
+.tree-expanded {
+    background: url('../images/tree_icons.png') no-repeat -50px 0px;
+}
+
+.tree-collapsed {
+    background: url('../images/tree_icons.png') no-repeat -32px 0px;
+}
+
+.tree-folder-open {
+    background: url('../images/tree_icons.png') no-repeat -224px 0;
+}
+
+.tree-folder {
+    background: url('../images/tree_icons.png') no-repeat -208px 0;
+}
+
+.tree-file {
+    background: url('../images/tree_icons.png') no-repeat -240px 0;
+}
+
+.tree-expanded, .tree-collapsed, .tree-folder, .tree-file, .tree-checkbox, .tree-indent, .tree-folder-open {
+    display: inline-block;
+    width: 16px;
+    height: 18px;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.tree-title {
+    font-size: 12px;
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: top;
+    white-space: nowrap;
+    padding: 0 2px;
+    height: 18px;
+    line-height: 18px;
+}

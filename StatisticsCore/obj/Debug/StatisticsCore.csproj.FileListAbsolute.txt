@@ -1,0 +1,24 @@
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\StatisticsCore\bin\Debug\Yawei.StatisticsCore.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\StatisticsCore\bin\Debug\Yawei.StatisticsCore.pdb
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\StatisticsCore\bin\Debug\Yawei.DataAccess.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\StatisticsCore\bin\Debug\Oracle.DataAccess.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\StatisticsCore\bin\Debug\Yawei.DataAccess.pdb
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\StatisticsCore\obj\Debug\StatisticsCore.csprojResolveAssemblyReference.cache
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\StatisticsCore\obj\Debug\Yawei.StatisticsCore.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\StatisticsCore\obj\Debug\Yawei.StatisticsCore.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\StatisticsCore\bin\Debug\Yawei.StatisticsCore.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\StatisticsCore\bin\Debug\Yawei.StatisticsCore.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\StatisticsCore\bin\Debug\Yawei.DataAccess.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\StatisticsCore\bin\Debug\Oracle.DataAccess.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\StatisticsCore\bin\Debug\Yawei.DataAccess.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\StatisticsCore\obj\Debug\StatisticsCore.csprojResolveAssemblyReference.cache
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\StatisticsCore\obj\Debug\Yawei.StatisticsCore.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\StatisticsCore\obj\Debug\Yawei.StatisticsCore.pdb
+G:\workspace\C# workspace\dzzwcode\StatisticsCore\bin\Debug\Yawei.StatisticsCore.dll
+G:\workspace\C# workspace\dzzwcode\StatisticsCore\bin\Debug\Yawei.StatisticsCore.pdb
+G:\workspace\C# workspace\dzzwcode\StatisticsCore\bin\Debug\Yawei.DataAccess.dll
+G:\workspace\C# workspace\dzzwcode\StatisticsCore\bin\Debug\Oracle.DataAccess.dll
+G:\workspace\C# workspace\dzzwcode\StatisticsCore\bin\Debug\Yawei.DataAccess.pdb
+G:\workspace\C# workspace\dzzwcode\StatisticsCore\obj\Debug\StatisticsCore.csprojResolveAssemblyReference.cache
+G:\workspace\C# workspace\dzzwcode\StatisticsCore\obj\Debug\Yawei.StatisticsCore.dll
+G:\workspace\C# workspace\dzzwcode\StatisticsCore\obj\Debug\Yawei.StatisticsCore.pdb

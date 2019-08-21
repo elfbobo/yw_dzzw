@@ -1,0 +1,67 @@
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.FacadeCore.XML
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.FacadeCore.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.FacadeCore.pdb
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\EntityFramework.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.DataAccess.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.IndustryManagerCore.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.ProjectCore.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.StatisticsCore.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.SupportCore.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Oracle.DataAccess.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.SSOLib.Common.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.Domain.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.DataAccess.pdb
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.IndustryManagerCore.pdb
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.IndustryManagerCore.xml
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.ProjectCore.pdb
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.ProjectCore.xml
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.StatisticsCore.pdb
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.SupportCore.pdb
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.Domain.pdb
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\FacadeCore\obj\Debug\FacadeCore.csprojResolveAssemblyReference.cache
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\FacadeCore\obj\Debug\Yawei.FacadeCore.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\FacadeCore\obj\Debug\Yawei.FacadeCore.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.FacadeCore.XML
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.FacadeCore.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.FacadeCore.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.DataAccess.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.IndustryManagerCore.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.ProjectCore.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.StatisticsCore.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.SupportCore.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Oracle.DataAccess.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.SSOLib.Common.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.Domain.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.DataAccess.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.IndustryManagerCore.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.IndustryManagerCore.xml
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.ProjectCore.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.ProjectCore.xml
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.StatisticsCore.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.SupportCore.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\FacadeCore\bin\Debug\Yawei.Domain.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\FacadeCore\obj\Debug\FacadeCore.csprojResolveAssemblyReference.cache
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\FacadeCore\obj\Debug\Yawei.FacadeCore.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\FacadeCore\obj\Debug\Yawei.FacadeCore.pdb
+G:\workspace\C# workspace\dzzwcode\FacadeCore\bin\Debug\Yawei.FacadeCore.XML
+G:\workspace\C# workspace\dzzwcode\FacadeCore\bin\Debug\Yawei.FacadeCore.dll
+G:\workspace\C# workspace\dzzwcode\FacadeCore\bin\Debug\Yawei.FacadeCore.pdb
+G:\workspace\C# workspace\dzzwcode\FacadeCore\bin\Debug\Yawei.DataAccess.dll
+G:\workspace\C# workspace\dzzwcode\FacadeCore\bin\Debug\Yawei.IndustryManagerCore.dll
+G:\workspace\C# workspace\dzzwcode\FacadeCore\bin\Debug\Yawei.ProjectCore.dll
+G:\workspace\C# workspace\dzzwcode\FacadeCore\bin\Debug\Yawei.StatisticsCore.dll
+G:\workspace\C# workspace\dzzwcode\FacadeCore\bin\Debug\Yawei.SupportCore.dll
+G:\workspace\C# workspace\dzzwcode\FacadeCore\bin\Debug\Oracle.DataAccess.dll
+G:\workspace\C# workspace\dzzwcode\FacadeCore\bin\Debug\Yawei.SSOLib.Common.dll
+G:\workspace\C# workspace\dzzwcode\FacadeCore\bin\Debug\Yawei.Domain.dll
+G:\workspace\C# workspace\dzzwcode\FacadeCore\bin\Debug\Yawei.DataAccess.pdb
+G:\workspace\C# workspace\dzzwcode\FacadeCore\bin\Debug\Yawei.IndustryManagerCore.pdb
+G:\workspace\C# workspace\dzzwcode\FacadeCore\bin\Debug\Yawei.IndustryManagerCore.xml
+G:\workspace\C# workspace\dzzwcode\FacadeCore\bin\Debug\Yawei.ProjectCore.pdb
+G:\workspace\C# workspace\dzzwcode\FacadeCore\bin\Debug\Yawei.ProjectCore.xml
+G:\workspace\C# workspace\dzzwcode\FacadeCore\bin\Debug\Yawei.StatisticsCore.pdb
+G:\workspace\C# workspace\dzzwcode\FacadeCore\bin\Debug\Yawei.SupportCore.pdb
+G:\workspace\C# workspace\dzzwcode\FacadeCore\bin\Debug\Yawei.Domain.pdb
+G:\workspace\C# workspace\dzzwcode\FacadeCore\obj\Debug\FacadeCore.csprojResolveAssemblyReference.cache
+G:\workspace\C# workspace\dzzwcode\FacadeCore\obj\Debug\Yawei.FacadeCore.dll
+G:\workspace\C# workspace\dzzwcode\FacadeCore\obj\Debug\Yawei.FacadeCore.pdb

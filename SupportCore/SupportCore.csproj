@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2993B84D-8AF1-41CD-A88D-DE717E42407A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Yawei.SupportCore</RootNamespace>
+    <AssemblyName>Yawei.SupportCore</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\WebApp\Content\Dll\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Yawei.SSOLib.Common">
+      <HintPath>..\WebApp\Content\Dll\Yawei.SSOLib.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Yawei.SSOLib.Cryptography">
+      <HintPath>..\WebApp\Content\Dll\Yawei.SSOLib.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Yawei.SSOLib.PSO">
+      <HintPath>..\WebApp\bin\Yawei.SSOLib.PSO.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuthorityCore.cs" />
+    <Compile Include="Common\AppSupport.cs" />
+    <Compile Include="Common\ConvertJson.cs" />
+    <Compile Include="Common\CurrentUser.cs" />
+    <Compile Include="Common\SharedPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DatabaseMng.cs" />
+    <Compile Include="ExcelHelperCore.cs" />
+    <Compile Include="MappingCore.cs" />
+    <Compile Include="MenuCore.cs" />
+    <Compile Include="RolesManageCore.cs" />
+    <Compile Include="SupportApi\Configuration\DefaultConfiguration.cs" />
+    <Compile Include="SupportApi\DBContext\SysDbContext.cs" />
+    <Compile Include="SupportApi\EntityHelper\Action.cs" />
+    <Compile Include="SupportApi\EntityHelper\ModelHelper.cs" />
+    <Compile Include="SupportApi\Entity\Mapping.cs" />
+    <Compile Include="SupportApi\Entity\Group.cs" />
+    <Compile Include="SupportApi\Entity\Menu.cs" />
+    <Compile Include="SupportApi\Entity\MenusLicenses.cs" />
+    <Compile Include="SupportApi\Entity\Model.cs" />
+    <Compile Include="SupportApi\Entity\ModelLicenses.cs" />
+    <Compile Include="SupportApi\Entity\Role.cs" />
+    <Compile Include="SupportApi\Entity\RoleUser.cs" />
+    <Compile Include="SupportApi\Entity\User.cs" />
+    <Compile Include="SupportApi\Entity\UserInGroup.cs" />
+    <Compile Include="SupportApi\API.cs" />
+    <Compile Include="Common\SysCommon.cs" />
+    <Compile Include="SysFormCore.cs" />
+    <Compile Include="SysGridCore.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SysFileCore.cs" />
+    <Compile Include="SysLogCore.cs" />
+    <Compile Include="TableEditCore.cs" />
+    <Compile Include="UserManageCore.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{c90b9112-d488-43ad-91dd-bd10182f6377}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{2c94f8f7-49e5-44d7-a379-4c1ee5b5ff76}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

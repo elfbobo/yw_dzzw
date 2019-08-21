@@ -1,0 +1,77 @@
+﻿/* Border styles */
+        #table-1 thead, #table-1 tr {
+            /*border-top-width: 1px;
+            border-top-style: solid;
+            border-top-color: rgb(230, 189, 189);*/
+        }
+
+        #table-1 {
+            /*border-bottom:1px solid rgb(230, 189, 189);
+            border-top:1px solid rgb(230, 189, 189);*/
+        }
+
+            #table-1 th {
+                padding: 15px 10px;
+                font-size: 14px;
+                font-family: Verdana;
+                color: rgba(255, 255, 255, 1);
+                text-align: center;
+                font-weight:bolder;
+                /*border-bottom:1px solid  rgb(230, 189, 189);*/
+            }
+            /* Padding and font style */
+            #table-1 td {
+                padding: 15px 10px;
+                font-size: 12px;
+                font-family: Verdana;
+                color: rgba(0, 0, 0, 1);
+                text-align:center
+            }
+
+            /* Alternating background colors */
+            #table-1 tr:nth-child(even) {
+                background: #f5f9fc;
+            }
+
+            #table-1 tr:nth-child(odd) {
+                background: #FFF;
+            }
+
+/* Border styles */
+        #table-2 thead, #table-2 tr {
+            /*border-top-width: 1px;
+            border-top-style: solid;
+            border-top-color: rgb(230, 189, 189);*/
+        }
+
+        #table-2 {
+            /*border-bottom:1px solid rgb(230, 189, 189);
+            border-top:1px solid rgb(230, 189, 189);*/
+        }
+
+            #table-2 th {
+                padding: 15px 10px;
+                font-size: 14px;
+                font-family: Verdana;
+                color: rgba(255, 255, 255, 1);
+                text-align: center;
+                font-weight:bolder;
+                /*border-bottom:1px solid  rgb(230, 189, 189);*/
+            }
+            /* Padding and font style */
+            #table-2 td {
+                padding: 8px 10px;
+                font-size: 12px;
+                font-family: Verdana;
+                color: rgba(0, 0, 0, 1);
+                text-align:center
+            }
+
+            /* Alternating background colors */
+            #table-2 tr:nth-child(even) {
+                 background: #f5f9fc;
+            }
+
+            #table-2 tr:nth-child(odd) {
+                background: #FFF;
+            }

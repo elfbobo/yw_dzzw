@@ -1,0 +1,11 @@
+G:\workspace\C# workspace\dzzwcode\SupportLib\bin\Debug\SupportLib.dll
+G:\workspace\C# workspace\dzzwcode\SupportLib\bin\Debug\SupportLib.pdb
+G:\workspace\C# workspace\dzzwcode\SupportLib\bin\Debug\ICSharpCode.SharpZipLib.dll
+G:\workspace\C# workspace\dzzwcode\SupportLib\bin\Debug\NPOI.dll
+G:\workspace\C# workspace\dzzwcode\SupportLib\bin\Debug\NPOI.OOXML.dll
+G:\workspace\C# workspace\dzzwcode\SupportLib\bin\Debug\NPOI.OpenXml4Net.dll
+G:\workspace\C# workspace\dzzwcode\SupportLib\bin\Debug\NPOI.OpenXmlFormats.dll
+G:\workspace\C# workspace\dzzwcode\SupportLib\bin\Debug\NPOI.xml
+G:\workspace\C# workspace\dzzwcode\SupportLib\obj\Debug\SupportLib.dll
+G:\workspace\C# workspace\dzzwcode\SupportLib\obj\Debug\SupportLib.pdb
+G:\workspace\C# workspace\dzzwcode\SupportLib\obj\Debug\SupportLib.csprojResolveAssemblyReference.cache

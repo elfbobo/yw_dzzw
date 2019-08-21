@@ -1,0 +1,16 @@
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\Domain\bin\Debug\Yawei.Domain.dll.config
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\Domain\bin\Debug\Yawei.Domain.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\Domain\bin\Debug\Yawei.Domain.pdb
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\Domain\obj\Debug\Yawei.Domain.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\Domain\obj\Debug\Yawei.Domain.pdb
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\Domain\bin\Debug\Yawei.Domain.dll.config
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\Domain\bin\Debug\Yawei.Domain.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\Domain\bin\Debug\Yawei.Domain.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\Domain\obj\Debug\Yawei.Domain.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\Domain\obj\Debug\Yawei.Domain.pdb
+G:\workspace\C# workspace\dzzwcode\Domain\bin\Debug\Yawei.Domain.dll.config
+G:\workspace\C# workspace\dzzwcode\Domain\bin\Debug\Yawei.Domain.dll
+G:\workspace\C# workspace\dzzwcode\Domain\bin\Debug\Yawei.Domain.pdb
+G:\workspace\C# workspace\dzzwcode\Domain\obj\Debug\Yawei.Domain.dll
+G:\workspace\C# workspace\dzzwcode\Domain\obj\Debug\Yawei.Domain.pdb

@@ -1,0 +1,11 @@
+G:\workspace\C# workspace\dzzwcode\SupportLib\bin\Release\SupportLib.dll
+G:\workspace\C# workspace\dzzwcode\SupportLib\bin\Release\SupportLib.pdb
+G:\workspace\C# workspace\dzzwcode\SupportLib\bin\Release\ICSharpCode.SharpZipLib.dll
+G:\workspace\C# workspace\dzzwcode\SupportLib\bin\Release\NPOI.dll
+G:\workspace\C# workspace\dzzwcode\SupportLib\bin\Release\NPOI.OOXML.dll
+G:\workspace\C# workspace\dzzwcode\SupportLib\bin\Release\NPOI.OpenXml4Net.dll
+G:\workspace\C# workspace\dzzwcode\SupportLib\bin\Release\NPOI.OpenXmlFormats.dll
+G:\workspace\C# workspace\dzzwcode\SupportLib\bin\Release\NPOI.xml
+G:\workspace\C# workspace\dzzwcode\SupportLib\obj\Release\SupportLib.csprojResolveAssemblyReference.cache
+G:\workspace\C# workspace\dzzwcode\SupportLib\obj\Release\SupportLib.dll
+G:\workspace\C# workspace\dzzwcode\SupportLib\obj\Release\SupportLib.pdb

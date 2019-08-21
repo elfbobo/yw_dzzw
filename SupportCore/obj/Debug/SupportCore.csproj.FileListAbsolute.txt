@@ -1,0 +1,40 @@
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\SupportCore\bin\Debug\Yawei.SupportCore.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\SupportCore\bin\Debug\Yawei.SupportCore.pdb
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\SupportCore\bin\Debug\EntityFramework.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\SupportCore\bin\Debug\Yawei.DataAccess.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\SupportCore\bin\Debug\Yawei.Domain.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\SupportCore\bin\Debug\Yawei.SSOLib.Common.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\SupportCore\bin\Debug\Yawei.SSOLib.Cryptography.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\SupportCore\bin\Debug\Yawei.SSOLib.PSO.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\SupportCore\bin\Debug\Oracle.DataAccess.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\SupportCore\bin\Debug\Yawei.DataAccess.pdb
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\SupportCore\bin\Debug\Yawei.Domain.pdb
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\SupportCore\obj\Debug\SupportCore.csprojResolveAssemblyReference.cache
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\SupportCore\obj\Debug\Yawei.SupportCore.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\SupportCore\obj\Debug\Yawei.SupportCore.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\SupportCore\bin\Debug\Yawei.SupportCore.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\SupportCore\bin\Debug\Yawei.SupportCore.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\SupportCore\bin\Debug\Yawei.DataAccess.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\SupportCore\bin\Debug\Yawei.Domain.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\SupportCore\bin\Debug\Yawei.SSOLib.Common.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\SupportCore\bin\Debug\Yawei.SSOLib.Cryptography.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\SupportCore\bin\Debug\Oracle.DataAccess.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\SupportCore\bin\Debug\Yawei.DataAccess.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\SupportCore\bin\Debug\Yawei.Domain.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\SupportCore\obj\Debug\SupportCore.csprojResolveAssemblyReference.cache
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\SupportCore\obj\Debug\Yawei.SupportCore.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\SupportCore\obj\Debug\Yawei.SupportCore.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\SupportCore\bin\Debug\Yawei.SSOLib.PSO.dll
+G:\workspace\C# workspace\dzzwcode\SupportCore\bin\Debug\Yawei.SupportCore.dll
+G:\workspace\C# workspace\dzzwcode\SupportCore\bin\Debug\Yawei.SupportCore.pdb
+G:\workspace\C# workspace\dzzwcode\SupportCore\bin\Debug\Yawei.DataAccess.dll
+G:\workspace\C# workspace\dzzwcode\SupportCore\bin\Debug\Yawei.Domain.dll
+G:\workspace\C# workspace\dzzwcode\SupportCore\bin\Debug\Yawei.SSOLib.Common.dll
+G:\workspace\C# workspace\dzzwcode\SupportCore\bin\Debug\Yawei.SSOLib.Cryptography.dll
+G:\workspace\C# workspace\dzzwcode\SupportCore\bin\Debug\Oracle.DataAccess.dll
+G:\workspace\C# workspace\dzzwcode\SupportCore\bin\Debug\Yawei.DataAccess.pdb
+G:\workspace\C# workspace\dzzwcode\SupportCore\bin\Debug\Yawei.Domain.pdb
+G:\workspace\C# workspace\dzzwcode\SupportCore\obj\Debug\SupportCore.csprojResolveAssemblyReference.cache
+G:\workspace\C# workspace\dzzwcode\SupportCore\obj\Debug\Yawei.SupportCore.dll
+G:\workspace\C# workspace\dzzwcode\SupportCore\obj\Debug\Yawei.SupportCore.pdb
+G:\workspace\C# workspace\dzzwcode\SupportCore\bin\Debug\Yawei.SSOLib.PSO.dll

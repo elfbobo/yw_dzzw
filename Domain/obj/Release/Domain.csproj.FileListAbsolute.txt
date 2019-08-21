@@ -1,0 +1,5 @@
+G:\workspace\C# workspace\dzzwcode\Domain\bin\Release\Yawei.Domain.dll.config
+G:\workspace\C# workspace\dzzwcode\Domain\bin\Release\Yawei.Domain.dll
+G:\workspace\C# workspace\dzzwcode\Domain\bin\Release\Yawei.Domain.pdb
+G:\workspace\C# workspace\dzzwcode\Domain\obj\Release\Yawei.Domain.dll
+G:\workspace\C# workspace\dzzwcode\Domain\obj\Release\Yawei.Domain.pdb

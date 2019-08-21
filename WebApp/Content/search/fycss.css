@@ -1,0 +1,86 @@
+﻿ .npbtn {
+            padding: 1px 30px 30px 30px;
+            width: 155px;
+            margin: 10px auto;
+            margin-top:1px
+        }
+
+        .disable {
+            background: #EBEBEB;
+            border-radius: 30px;
+            -moz-border-radius: 30px;
+            -webkit-border-radius: 30px;
+        }
+
+        .prev {
+            float: left;
+        }
+
+        .next {
+            float: right;
+        }
+
+        .next, .prev {
+            padding: 0 20px 0 0;
+            height: 40px;
+            background-position: right -348px;
+            position: relative;
+            text-shadow: 0 1px transparent;
+        }
+
+            .next .title {
+                padding: 11px 38px 0 0;
+                right: 0;
+            }
+
+            .prev .title {
+                padding: 11px 26px 0 0;
+                right: 0;
+            }
+
+        .cap {
+            width: 20px;
+            height: 40px;
+            display: block;
+            background-position: left -282px;
+        }
+
+        .title {
+            display: none;
+            position: absolute;
+            top: 0;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .arrow {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            background: url(images/arrow-left-right.png) no-repeat;
+        }
+         .prev .arrow {
+            left: 0;
+            background-position: 0px 0px;
+        }
+
+        .next .arrow {
+            right: 0;
+            background-position: 0px -40px;
+        }
+
+        .active {
+            background-color: #3F9CDE;
+            border-radius: 30px;
+            -moz-border-radius: 30px;
+            -webkit-border-radius: 30px;
+        }
+
+            .active a {
+                display: block;
+            }
+
+                .active a:hover {
+                    text-decoration: none;
+                }

@@ -1,0 +1,8 @@
+G:\workspace\C# workspace\dzzwcode\StatisticsCore\bin\Release\Yawei.StatisticsCore.dll
+G:\workspace\C# workspace\dzzwcode\StatisticsCore\bin\Release\Yawei.StatisticsCore.pdb
+G:\workspace\C# workspace\dzzwcode\StatisticsCore\bin\Release\Yawei.DataAccess.dll
+G:\workspace\C# workspace\dzzwcode\StatisticsCore\bin\Release\Oracle.DataAccess.dll
+G:\workspace\C# workspace\dzzwcode\StatisticsCore\bin\Release\Yawei.DataAccess.pdb
+G:\workspace\C# workspace\dzzwcode\StatisticsCore\obj\Release\StatisticsCore.csprojResolveAssemblyReference.cache
+G:\workspace\C# workspace\dzzwcode\StatisticsCore\obj\Release\Yawei.StatisticsCore.dll
+G:\workspace\C# workspace\dzzwcode\StatisticsCore\obj\Release\Yawei.StatisticsCore.pdb

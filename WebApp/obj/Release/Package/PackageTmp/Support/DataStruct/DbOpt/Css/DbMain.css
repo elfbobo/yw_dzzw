@@ -1,0 +1,75 @@
+﻿        .tableNew {
+            width: 100%;
+            border-top: 1px solid #a3cdf3;
+            border-right: 1px solid #fff;
+            border-bottom: 1px #a3cdf3;
+            border-left: 1px solid #a3cdf3;
+        }
+        .TdLabelNew {
+            line-height: 20px;
+            font: 9pt Arial,Sans-serif,"宋体";
+            color: #000;
+            padding: 6px 1px 4px 5px;
+            letter-spacing: 0px;
+            text-align: right;
+            vertical-align: middle;
+            border-top: 1px solid #fff;
+            border-right: 1px solid #e1e1e1;
+            border-bottom: 1px solid #e1e1e1;
+            border-left: 1px solid #fff;
+        }
+
+        .TdContentNew {
+            line-height: 20px;
+            font: 9pt Arial,Sans-serif,"宋体";
+            color: #000;
+            /*padding: 6px 1px 4px 5px;*/
+            letter-spacing: 0px;
+            text-align: left;
+            vertical-align: middle;
+            border-top: 1px solid #fff;
+            border-right: 1px solid #e1e1e1;
+            border-bottom: 1px solid #e1e1e1;
+            border-left: 1px solid #fff;
+        }
+
+        .TdContentNew input {
+            background: transparent;
+            border: 1px solid #999;
+            font-family: 'Microsoft YaHei';
+            color: #434142;
+        }
+
+        .TdContentNew select {
+            margin: -2;
+            clip: rect(2 85 85 2);
+            font-family: 'Microsoft YaHei';
+            border: 1px solid #999;
+            color: #434142;
+        }
+
+     .titledialog
+    {
+        border: #e5e5e5 solid 1px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background-attachment: scroll;
+        background-origin: padding-box;
+        background-clip: border-box;
+        background-size: auto;
+        height: 30px;
+        background-color: rgb(243, 243, 243);
+        line-height: 30px;
+        text-align:right;
+    }
+     .win
+    {
+        border: #999 1px solid;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 0px 0px 5px #535658;
+        position:absolute;
+        left: 400px;
+        top: 130px;
+        z-index:9999999;
+    }

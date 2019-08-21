@@ -1,0 +1,1369 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Yawei.ProjectCore</name>
+    </assembly>
+    <members>
+        <member name="T:Yawei.ProjectCore.AssessmentDetails">
+            <summary>
+            项目考核
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.AssessmentDetails.GetAssessmentType(System.String,System.String)">
+            <summary>
+            考核模块类型
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="DepartType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.AssessmentDetails.GetAssessmentDetailsType(System.String,System.String)">
+            <summary>
+            项目考核分类
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="DepartType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.AssessmentDetails.GetAssessmentDetails(System.String,System.String)">
+            <summary>
+            获取考核明细
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="DepartType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.AssessmentDetails.GetAssessment_DailyApplication(System.String,System.String)">
+            <summary>
+            获取日常考核明细
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="DepartType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.AssessmentDetails.GetEveryAssessmentScore(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            获取每个小项的扣分数
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="DepartType"></param>
+            <param name="type"></param>
+            <param name="IsDay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.AssessmentDetails.GetHjAssessmentScore(System.String,System.String)">
+            <summary>
+            合计总扣分数
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="DepartType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.AssessmentDetails.GetAssessmentScore(System.String,System.String)">
+            <summary>
+            获取每个大项的得分情况
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="DepartType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.AssessmentDetails.GetIndustryAssessmentType(System.String)">
+            <summary>
+            获取行业监管部门考核模块
+            </summary>
+            <param name="DepartGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.AssessmentDetails.GetIndustryAssessmentDetails(System.String)">
+            <summary>
+            获取扣分明细
+            </summary>
+            <param name="DepartGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.AssessmentDetails.GetConstructionScore(System.String)">
+            <summary>
+            获取子项目中建设单位得分
+            </summary>
+            <param name="projGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.AssessmentDetails.AverageAssessmentScore(System.String)">
+            <summary>
+            获取主管部门所有项目的平均分数
+            </summary>
+            <param name="deptGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.AssessmentDetails.DepartAvg(System.String)">
+            <summary>
+            所有区市主管部门和平均分
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.AssessmentDetails.QTDepartAvg(System.String)">
+            <summary>
+            其他部门
+            </summary>
+            <param name="where"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.AssessmentDetails.GetAvg(System.String)">
+            <summary>
+            上级部门平均分
+            </summary>
+            <param name="depart"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.AssessmentDetails.GetTopDepartment(System.String)">
+            <summary>
+            获取所有主管部门的上级部门
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.AssessmentDetails.GetDepartmentsAvgScore(System.String,System.String)">
+            <summary>
+            获取市直部门的平均得分
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.AssessmentDetails.GetSingletDepartmentsAvgScore(System.String,System.String)">
+            <summary>
+            获取单个部门的平均分
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.AssessmentDetails.GetDepartNameByDepartGuid(System.String)">
+            <summary>
+            获取主管部门名称
+            </summary>
+            <param name="departGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.AssessmentDetails.GetProjDeparts(System.String,System.Int32,System.String)">
+            <summary>
+            获取主管部门对应的项目
+            </summary>
+            <param name="DepartGuid"></param>
+            <param name="Year"></param>
+            <param name="Month"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.AssessmentDetails.GetProjActualScoreByDepartments(System.String,System.Int32,System.String)">
+             <summary>
+            通过主管部门获取所对应的项目得分
+             </summary>
+             <param name="DepartGuid"></param>
+             <param name="Year"></param>
+             <param name="Month"></param>
+             <returns></returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.BudgetDetailCore">
+            <summary>
+            预算明细
+            </summary>
+        </member>
+        <!-- 对于成员“M:Yawei.ProjectCore.BudgetDetailCore.getData(System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="T:Yawei.ProjectCore.BudgetPlan">
+            <summary>
+            预算计划下达操作对象
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.BudgetPlan.getProjNameByGuid(System.String)">
+            <summary>
+            根据项目Guid获取项目名称
+            </summary>
+            <param name="projGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.BuildProcedureInfo">
+            <summary>
+            建设程序管理类
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.BuildProcedureInfo.GetProjTop(System.String)">
+            <summary>
+            判断项目是主项目还是子项目
+            </summary>
+            <param name="ProjGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.BuildProcedureInfo.GetProjAffiliation(System.String)">
+            <summary>
+            获取该项目的项目主从关系
+            </summary>
+            <param name="ProjGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.BuildProcedureInfo.GetMainByType(System.String,System.String,System.String)">
+            <summary>
+            根据投资类型和审批类型获取相对应的主要审批手续
+            </summary>
+            <param name="NationType">审批类型</param>
+            <param name="InvestType">投资类型</param>
+            <param name="ProjGuid">项目主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.BuildProcedureInfo.GetOther(System.String)">
+            <summary>
+            获取其他审批手续
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.BuildProcedureInfo.Save(System.Data.DataSet)">
+            <summary>
+            保存办理手续
+            </summary>
+            <param name="ds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.BuildProcedureInfo.GetProjMainProcedure(System.String)">
+            <summary>
+            获取该项目的主要手续
+            </summary>
+            <param name="projGuid">项目Guid</param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.BuildProcedureInfo.GetProjChildProcedure(System.String)">
+            <summary>
+            获取该项目的子手续
+            </summary>
+            <param name="projGuid">项目Guid</param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.BuildProcedureInfo.GetProjOtherConfig(System.String)">
+            <summary>
+            获取该项目其他手续的类型
+            </summary>
+            <param name="projGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.BuildProcedureInfo.GetProjOtherProcedure(System.String,System.String)">
+            <summary>
+            获取该项目的其他手续
+            </summary>
+            <param name="projGuid">项目Guid</param>
+            <param name="Type">手续类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.BuildProcedureInfo.GetSelectedApproveByProjGuid(System.String,System.String@,System.String@,System.String@,System.String@)">
+            <summary>
+            通过项目主键获取设置的手续
+            </summary>
+            <param name="ProjGuid">项目主键</param>
+            <param name="MainAppList">主手续字符串</param>
+            <param name="ApproveList">手续字符串</param>
+            <param name="ApproveTypeList">手续类别字符串</param>
+            <param name="topProj">如果是子项目返回主项目手续</param>
+        </member>
+        <member name="M:Yawei.ProjectCore.BuildProcedureInfo.ApprovalGetNameByGuid(System.String)">
+            <summary>
+            通过手续主键获得手续名称
+            </summary>
+            <param name="Guid">手续主键</param>
+            <returns>手续名称</returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.BuildProcedureInfo.isProjProcedureByCstrctProcess(System.String,System.String)">
+            <summary>
+            判断该项目选中的手续是否在建设过程中已填
+            </summary>
+            <param name="ProjGuid">项目Guid</param>
+            <param name="ApprovalGuid">审批手续Guid</param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.BuildProcedureInfo.SaveProcedureChild(System.String,System.String)">
+            <summary>
+            保存子手续计划时间
+            </summary>
+            <param name="datas">子手续计划时间数据集</param>
+            <param name="ProjGuid">项目主键</param>
+            <returns>返回影响行数</returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.BuildProcedureInfo.GetProcedureChildData(System.String)">
+            <summary>
+            获取子手续计划时间
+            </summary>
+            <param name="ProjGuid">项目主键</param>
+            <returns>DataTable数据集</returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.CancelMilestone">
+            <summary>
+            取消里程碑
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.CancelMilestone.UpdateCancelMilestoneByGuid(System.String)">
+            <summary>
+            通过里程碑的Guid来取消里程碑
+            </summary>
+            <param name="guid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.CityExamine">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.CityExamine.StrToDataSet(System.Data.DataSet)">
+            <summary>
+            获取List页面数据
+            </summary>
+            <param name="ds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.CityExamine.StrToDataSet(System.Data.DataSet,System.String)">
+            <summary>
+            获取List页面查询数据
+            </summary>
+            <param name="ds"></param>
+            <param name="where"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.CityExamine.GetCityExamineView(System.String,System.String,System.String)">
+            <summary>
+            获取View页面数据
+            </summary>
+            <param name="projGuid"></param>
+            <param name="year"></param>
+            <param name="month"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.CityExamine.GetCityExamineYearAndMonth(System.String)">
+            <summary>
+            获取项目的年月
+            </summary>
+            <param name="where"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.CityExamine.DeleteCityExamine(System.String)">
+            <summary>
+            删除数据
+            </summary>
+            <param name="where"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.CityExamine.ShowCityExamine(System.String)">
+            <summary>
+            获取项目Guid，类型，主项目类型
+            </summary>
+            <param name="projGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.CooperatedBuildPersonnel">
+            <summary>
+            参建人员
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.CooperatedBuildPersonnel.GetBuilderUnitsByProjGuid(System.String,System.String)">
+            <summary>
+            根据项目主键返回参建单位
+            </summary>
+            <param name="projGuid">项目主键</param>
+            <param name="uName">参建单位名字查询条件</param>
+            <returns>参建单位的DataTable</returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.CooperatedBuildPersonnel.GetBuilderUnitsNameByGuid(System.String)">
+            <summary>
+            根据参建单位主键查询参建单位名称
+            </summary>
+            <param name="Guids">参建单位主键</param>
+            <returns>参建单位名称</returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.CooperatedBuildPersonnel.GetBuilderUnitsNameByGuid(System.String,System.String@)">
+            <summary>
+            根据参建单位主键查询参建单位名称
+            </summary>
+            <param name="Guids">参建单位主键</param>
+            <param name="Names">名字结果集</param>
+        </member>
+        <member name="M:Yawei.ProjectCore.CooperatedBuildPersonnel.CheckGszchEqual(System.String)">
+            <summary>
+            根据工商注册号去企业库中检查是否存在，存在返回中介机构信息的主键
+            </summary>
+            <param name="GSZCH">工商注册号</param>
+            <returns></returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.CstrctProcess">
+            <summary>
+            审批手续保存
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.CstrctProcess.DoInsertUpdateSqlCommand(System.String,System.String,System.String)">
+            <summary>
+            执行更新语句
+            </summary>
+            <param name="SelectSql"></param>
+            <param name="InsertSql"></param>
+            <param name="UpdataSql"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.EarlyInvestInfo">
+            <summary>
+            前期投资事项
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.EarlyInvestInfo.UpdateEarlyInvest(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            前期投资事项修改
+            </summary>
+            <param name="ProjOrCostName"></param>
+            <param name="InvestAccount"></param>
+            <param name="CostType"></param>
+            <param name="Remark"></param>
+            <param name="DealCase"></param>
+            <param name="PlanAmount"></param>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.EarlyInvestInfo.DeleteEarlyInvest(System.String)">
+            <summary>
+            删除前期投资事项
+            </summary>
+            <param name="Code">事项编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.EarlyInvestInfo.InsertEarlyInvestAndEstimateRelevance(System.String,System.String)">
+            <summary>
+            插入前期投资事项和概算关联关系
+            </summary>
+            <param name="EarlyInvestGuid"></param>
+            <param name="EstimateGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.EstimateDetail">
+            <summary>
+            概算明细
+            </summary>
+        </member>
+        <member name="F:Yawei.ProjectCore.EstimateDetail.db">
+            <summary>
+            概算明细操作
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.EstimateDetail.importData(System.String)">
+            <summary>
+            从中间表导入数据
+            </summary>
+            <param name="projGuid"></param>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:Yawei.ProjectCore.EstimateDetail.getData(System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:Yawei.ProjectCore.EstimateDetail.GetOldEstimateDetail(System.String)">
+            <summary>
+            通过批复关系得到所对应概算明细
+            </summary>
+            <param name="ChangeBudgetaryGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.EstimateDetail.InsertAddedBudget(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            插入新增概算
+            </summary>
+            <param name="Guid"></param>
+            <param name="TopGuid"></param>
+            <param name="ProjGuid"></param>
+            <param name="ProjOrCostName"></param>
+            <param name="InvestAccount"></param>
+            <param name="Remark"></param>
+            <param name="Quantity"></param>
+            <param name="Unit"></param>
+            <param name="CostType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.EstimateDetail.DeleteAddedBudget(System.String)">
+            <summary>
+            删除项目批复所关联的概算
+            </summary>
+            <param name="ChangeBudgetaryGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.EstimateDetail.InsertBudgetAdjustmentRelevance(System.String,System.String)">
+            <summary>
+            插入批复和新增概算关联数据
+            </summary>
+            <param name="ChangeBudgetaryGuid"></param>
+            <param name="EstimatesGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.EstimateDetail.getBudgetAdjustmentRelevanceDs">
+            <summary>
+            获取空的关联表
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:Yawei.ProjectCore.EstimateDetail.getEarlyInvestData(System.String)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Yawei.ProjectCore.EstimateDetail.getOutsideInvestData(System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:Yawei.ProjectCore.EstimateDetail.IsApproval(System.String)">
+            <summary>
+            该概算调整是否已批复
+            </summary>
+            <param name="ApprovalGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.EstimateDetail.DeleteBudgetAdjustmentRelevance(System.String)">
+            <summary>
+            删除批复和新增概算关联数据
+            </summary>
+            <param name="ChangeBudgetaryGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.EstimateDetail.GetOutsideEstimates(System.String)">
+            <summary>
+            获取该项目的概算外事项
+            </summary>
+            <param name="ProjGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.EstimateDetail.GetRriginalBudgetAdjustment(System.String)">
+            <summary>
+            获取该项目原概算调整后的概算
+            </summary>
+            <param name="ProjGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.EstimateDetail.GetRefGuid(System.String,System.String)">
+            <summary>
+            2015-11-11
+            通过项目Guid找到建设程序中证照批复的Guid
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="fileSign"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.EstimateDetail.GetInvestEstimate(System.String)">
+            <summary>
+            获取项目投资概算总额
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.EstimateDetail.GetInvestComplete(System.String)">
+            <summary>
+            投资完成月报金额合计
+            </summary>
+            <param name="ProjGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.EstimateDetail.GetFundPayment(System.String)">
+            <summary>
+            资金支付月报合计
+            </summary>
+            <param name="ProjGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.FormatProject">
+            <summary>
+            项目管理公共类
+            </summary>
+        </member>
+        <!-- 对于成员“M:Yawei.ProjectCore.FormatProject.GetProjNameByGuid(System.String)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Yawei.ProjectCore.FormatProject.GetProjDicByGuid(System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:Yawei.ProjectCore.FormatProject.IsExistProject(System.String,System.String)">
+            <summary>
+            判断table中是否已经存在了该项目
+            </summary>
+            <param name="table">要判断的表</param>
+            <param name="ProjGuid">该表中的项目Guid</param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.FormatProject.InfoAction(System.String,System.String,System.String,System.String,System.String,System.Data.DataSet,System.String)">
+            <summary>
+            项目信息审核退回
+            </summary>
+            <param name="table">表名称</param>
+            <param name="status">审核状态 1 审核 2 退回</param>
+            <param name="refGuid">数据主键</param>
+            <param name="projGuid">项目主键</param>
+            <param name="remark">意见</param>
+            <param name="logDs">操作日志程序集</param>
+            <param name="url">当前地址</param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.FormatProject.CannelConfirm(System.String,System.String,System.String,System.String,System.Data.DataSet)">
+            <summary>
+            取消审核功能
+            </summary>
+            <param name="table">表名称</param>
+            <param name="refGuid">数据主键</param>
+            <param name="projGuid">项目主键</param>
+            <param name="url">当前url</param>
+            /// <param name="log">当前url</param>
+        </member>
+        <member name="M:Yawei.ProjectCore.FormatProject.GetProjConfirmInfo(System.String,System.String,System.String)">
+            <summary>
+            获取审核意见
+            </summary>
+            <param name="guid">数据主键</param>
+            <param name="table">表名</param>
+            <param name="projGuid">项目主键</param>
+            <returns>json格式的意见</returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.FundsMonthly">
+            <summary>
+            资金到位月报
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.FundsMonthly.GetPayNum(System.String,System.String)">
+            <summary>
+            获取预算文号
+            </summary>
+            <param name="projGuid"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.GEClass">
+            <summary>
+            通用方法
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.GEClass.UpdateRelateTable(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            手续同步金额和资金来源
+            </summary>
+            <param name="JudgeTable1">查询判断手续表</param>
+            <param name="JudgeTable2">查询判断投资表</param>
+            <param name="Field1">Table1金额字段</param>
+            <param name="Field2">Table2金额字段</param>
+            <param name="ProjGuid">项目主键</param>
+            <param name="DataSourceTable">资金来源手续表标识</param>
+            <param name="DataAimTable">资金来源投资表标识</param>
+            <returns>新数据主键</returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.GetConfirm">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.GetConfirm.GetConfirmInfo(System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="projGuid"></param>
+            <param name="remark"></param>
+            <param name="sign"></param>
+            <param name="confirmStatus"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.ImagesShow">
+            <summary>
+            图片滚动页面
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.ImagesShow.GetYears(System.String)">
+            <summary>
+            获取年以及对应月份
+            </summary>
+            <param name="ProjGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.ImagesShow.GetImagesCount(System.String)">
+            <summary>
+            获取图片数量
+            </summary>
+            <param name="ProjGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.ImagesShow.GetImagesCount(System.String,System.String)">
+            <summary>
+            获取带条件图片数量
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="Condition"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.ImagesShow.GetImagesContent(System.String,System.Int32)">
+            <summary>
+            获取图片信息
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="PageNum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.ImagesShow.GetImagesContent(System.String,System.String,System.Int32)">
+            <summary>
+            获取带条件的图片信息
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="Condition"></param>
+            <param name="PageNum"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.IndexGetStatistics">
+            <summary>
+            首页显示统计信息
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.IndexGetStatistics.GetIndexStatisticsHtml(System.String,System.String@)">
+            <summary>
+            根据查询条件统计
+            </summary>
+            <param name="Condition">查询调教</param>
+            <param name="Datas">返回统计图数据</param>
+            <returns>结果集</returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.IndustrySupervision">
+            <summary>
+            行业监管部门责任体系
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.IndustrySupervision.GetIndustrySupervisionDepartment(System.String)">
+            <summary>
+            获取行业部门
+            </summary>
+            <param name="DepartmentGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.IndustrySupervision.GetIndustrySupervisionOffice(System.String)">
+            <summary>
+            获取行业部门的分管处室
+            </summary>
+            <param name="DepartmentGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.InvestFromDetails">
+            <summary>
+            资金来源明细对象
+            </summary>
+        </member>
+        <member name="F:Yawei.ProjectCore.InvestFromDetails.db">
+            <summary>
+            获取数据库实力
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.InvestFromDetails.GetGuidByRefGuid(System.String)">
+            <summary>
+            根据月报guid获取资金来源明细guid
+            </summary>
+            <param name="refGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.InvestFromDetails.GetFundNameByGuid(System.String)">
+            <summary>
+            根据概算主键返回概算单项名称
+            </summary>
+            <param name="Guids">主键集合</param>
+            <returns>名称集合</returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.InvestFromDetails.GetFundNameByGuid(System.String,System.String@)">
+            <summary>
+            根据概算主键返回概算单项名称
+            </summary>
+            <param name="Guids">主键集合</param>
+            <param name="Datas">名称集合</param>
+        </member>
+        <member name="M:Yawei.ProjectCore.InvestFromDetails.DeleteContractPay(System.String,System.String,System.String)">
+            <summary>
+            11-18
+            支付条件已填，但没有合同，删除支付条件
+            </summary>
+            <param name="Guid"></param>
+            <param name="fieldName">字段</param>
+            <param name="tableName"></param>
+        </member>
+        <member name="T:Yawei.ProjectCore.JCBuildProcedureInfo">
+            <summary>
+            机场项目办理计划
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.JCBuildProcedureInfo.GetMainByType(System.String)">
+            <summary>
+            根据投资类型和审批类型获取相对应的主要审批手续
+            </summary>
+            <param name="ProjGuid">项目主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.JCBuildProcedureInfo.GetJzOther(System.String)">
+            <summary>
+            主项目的主从关系是否是集中立项可研，子项目独立批复概算，显示的子手续
+            </summary>
+            <param name="ProjGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.JCBuildProcedureInfo.GetZother(System.String)">
+            <summary>
+            子项目的子手续
+            </summary>
+            <param name="ProjGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.JCBuildProcedureInfo.GetProjType(System.String)">
+            <summary>
+            获取机场项目的标记
+            </summary>
+            <param name="ProjGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.OnlineQuiz">
+            <summary>
+            在线问答
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.OnlineQuiz.QuestionSumbit(System.String,System.String,System.String)">
+            <summary>
+            提交问题
+            </summary>
+            <param name="AnswerGuid">回答问题主键</param>
+            <param name="QuerstionContent">提问内容</param>
+            <param name="UserGuid">用户主键</param>
+            <returns>影响行数</returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.OnlineQuiz.QuestionSumbit(System.String,System.String,System.String,System.String)">
+            <summary>
+            提交问题
+            </summary>
+            <param name="AnswerGuid">回答问题主键</param>
+            <param name="QuerstionContent">提问内容</param>
+            <param name="UserGuid">用户主键</param>
+            <param name="TopicGuid">帖子主键</param>
+            <returns>影响行数</returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.OnlineQuiz.AnswerSumbit(System.String,System.String,System.String)">
+            <summary>
+            提交回答
+            </summary>
+            <param name="QuestionGuid">问题主键</param>
+            <param name="QuestionContent">问题内容</param>
+            <param name="UserGuid">用户主键</param>
+            <returns>影响行数</returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.OutsideEstimatesInfo">
+            <summary>
+            概算外事项
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.OutsideEstimatesInfo.UpdateOutsideEstimates(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            概算外事项修改
+            </summary>
+            <param name="ProjOrCostName"></param>
+            <param name="InvestAccount"></param>
+            <param name="Quantity"></param>
+            <param name="Unit"></param>
+            <param name="Remark"></param>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.OutsideEstimatesInfo.DeleteOutsideEstimates(System.String)">
+            <summary>
+            删除概算外事项
+            </summary>
+            <param name="Code">事项编号</param>
+            <returns></returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.PorjBaseInfo">
+            <summary>
+            项目基本信息公共类
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.PorjBaseInfo.ProjRegisterSaveData(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            保存各单位到子表
+            </summary>
+            <param name="ProjGuid">项目主键</param>
+            <param name="deptGuids">项目主管部门主键集合</param>
+            <param name="adminGuid">行业主管部门主键集合</param>
+            <param name="usedGuid">项目使用单位主键集合</param>
+            <param name="constGuids">项目建设（代建）单位主键集合</param>
+        </member>
+        <member name="M:Yawei.ProjectCore.PorjBaseInfo.DeleteProjRegisterDepart(System.String)">
+            <summary>
+            删除各单位子表内容
+            </summary>
+            <param name="ProjGuid">项目主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.PorjBaseInfo.GetGuidByProjGuidAndDeptType(System.String)">
+            <summary>
+            根据项目主键和项目类型取责任体系数据集
+            </summary>
+            <param name="ProjGuid">项目主键</param>
+            <returns>数据集</returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.PorjBaseInfo.GetGuidByProjGuidAndDeptType(System.String,System.String@,System.String@)">
+            <summary>
+            根据项目主键和项目类型取责任体系数据集
+            </summary>
+            <param name="ProjGuid">项目主键</param>
+            <param name="html1">主管部门html代码</param>
+            <param name="html2">建设单位html代码</param>
+        </member>
+        <member name="M:Yawei.ProjectCore.PorjBaseInfo.DeleteListData(System.String)">
+            <summary>
+            责任体系列表删除方法
+            </summary>
+            <param name="ProjGuids">项目主键集合</param>
+            <returns>返回操作影响数（大于零删除成功）-1为未选中操作数据</returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.PorjBaseInfo.GetDicNameByGroupValue(System.String,System.String)">
+            <summary>
+            获取行业类型
+            </summary>
+            <param name="value">行业类型编号</param>
+            <param name="group">行业类型分组</param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.PorjBaseInfo.GetModuleJson">
+            <summary>
+            将所有行业类别拼成json串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.PorjBaseInfo.GetProjTime(System.String)">
+            <summary>
+            返回登记信息中存在日期
+            </summary>
+            <param name="Type">新建或列表页</param>
+            <returns>存在日期字符串</returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.PorjBaseInfo.TableIsData(System.String,System.String)">
+            <summary>
+            判断在表中是否存在该项目数据
+            </summary>
+            <param name="tableName"></param>
+            <param name="projGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.PorjBaseInfo.RunSqlGetResult(System.String)">
+            <summary>
+            执行SQL语句获得结果
+            </summary>
+            <param name="Sql">SQL语句</param>
+            <returns>影响行数</returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.PorjBaseInfo.UpdateStatusForRegister(System.String,System.String)">
+            <summary>
+            更新登记信息状态 5为中止/恢复后为0，6为撤销,7为缓建
+            </summary>
+            <param name="Guid">项目主键</param>
+            <param name="Type">更新状态类别</param>
+            <returns>返回执行是否成功</returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.PorjBaseInfo.ReturnHtmlByProjGuid(System.String)">
+            <summary>
+            通过项目主键返回对应培训登记记录
+            </summary>
+            <param name="ProjGuid">项目Guid</param>
+            <returns>DataTable</returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.PorjBaseInfo.GetProjAffiliation(System.String)">
+            <summary>
+            获取项目主从关系
+            </summary>
+            <param name="ProjGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.PorjBaseInfo.GetChildProject(System.String)">
+            <summary>
+            通过主项目获取子项目
+            </summary>
+            <param name="TopGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.PorjBaseInfo.ProjAffiliationCount(System.String)">
+            <summary>
+            获取主管部门下面有没有对应的独立审批子项目、集中立项可研，子项目独立批复概算的主项目
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.ProjAdvanceInfo">
+            <summary>
+            项目推进责任
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.ProjAdvanceInfo.GetProjNameAndInvest(System.String)">
+            <summary>
+            获取项目名称和项目总投资
+            </summary>
+            <param name="ProjGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.ProjAdvanceInfo.GetResponsibility(System.String,System.Int32)">
+            <summary>
+            获取责任体系中的数据
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="DepartType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.ProjAdvanceInfo.GetProjPlanYear(System.String)">
+            <summary>
+            获取项目年度计划信息
+            </summary>
+            <param name="ProjGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.ProjAdvanceInfo.GetProjMainProcedure(System.String)">
+            <summary>
+            获取该项目的主要手续
+            </summary>
+            <param name="projGuid">项目Guid</param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.ProjAdvanceInfo.GetProjOtherConfig(System.String)">
+            <summary>
+            获取该项目其他手续的类型
+            </summary>
+            <param name="projGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.ProjAdvanceInfo.GetProjOtherProcedure(System.String,System.String)">
+            <summary>
+            获取该项目的其他手续
+            </summary>
+            <param name="projGuid">项目Guid</param>
+            <param name="Type">手续类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.ProjAdvanceInfo.GetProjChildProcedure(System.String,System.String)">
+            <summary>
+            获取该项目手续中的子手续
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="ApprovalGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.ProjAdvanceInfo.GetCompileUnit(System.String,System.String)">
+            <summary>
+            获取手续的编制单位
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.ProjAdvanceInfo.GetApplyUnit(System.String)">
+            <summary>
+            获取手续的审批单位
+            </summary>
+            <param name="ApprovalGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.ProjAdvanceInfo.GetReviseUnit(System.String,System.String)">
+            <summary>
+            获取手续的修订单位
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="ApprovalGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.ProjAdvanceInfo.GetCstrctProcessReply(System.String,System.String)">
+            <summary>
+            获取手续的批复单位、批复文号
+            </summary>
+            <param name="ProjGuid">项目主键</param>
+            <param name="ApprovalGuid">手续主键</param>
+            <returns>批复基本信息DataTable</returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.ProjAdvanceInfo.GetProjMainPrepStartDate(System.String,System.String)">
+            <summary>
+            获取项目手续的审批开始时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.ProjAdvanceInfo.GetProjMainPrepEndDate(System.String,System.String)">
+            <summary>
+            获取项目手续的审批办结时间
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="ApprovalGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.ProjAdvanceInfo.GetProjChildPrepStartDate(System.String,System.String,System.String)">
+            <summary>
+            获取项目子手续的审批开始时间
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="ApprovalGuid"></param>
+            <param name="ApprovalChildType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.ProjAdvanceInfo.GetProjChildPrepEndDate(System.String,System.String,System.String)">
+            <summary>
+            获取项目子手续的审批办结时间
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="ApprovalGuid"></param>
+            <param name="ApprovalChildType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.ProjAdvanceInfo.GetProjMainMonthPrepInfo(System.String,System.String)">
+            <summary>
+            获取项目主手续的月度进展信息
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="ApprovalGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.ProjAdvanceInfo.GetProjChildMonthPrepInfo(System.String,System.String,System.String)">
+            <summary>
+            获取项目子手续的月度进展信息
+            </summary>
+            <param name="ProjGuid"></param>
+            <param name="ApprovalGuid"></param>
+            <param name="ApprovalChildType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.ProjAdvanceInfo.GetProjMonthPlan(System.String,System.Int32)">
+            <summary>
+            获取当前年度的项目月度计划、计划完成投资、资金使用计划
+            </summary>
+            <param name="projGuid"></param>
+            <param name="month"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.ProjAdvanceInfo.GetPlanFinancial(System.String,System.Int32)">
+            <summary>
+            计划使用资金小计
+            </summary>
+            <param name="projGuid"></param>
+            <param name="month"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.ProjAdvanceInfo.GetProjConstructReport(System.String,System.Int32)">
+            <summary>
+            项目实际进展情况（形象进度月报）
+            </summary>
+            <param name="projGuid"></param>
+            <param name="Month"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.ProjAdvanceInfo.GetProjMonthInvestComplete(System.String,System.Int32)">
+            <summary>
+            项目实际月完成投资
+            </summary>
+            <param name="projGuid"></param>
+            <param name="Month"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.ProjAdvanceInfo.GetProjFundsMonthly(System.String,System.Int32,System.String)">
+            <summary>
+            资金到位合计
+            </summary>
+            <param name="projGuid"></param>
+            <param name="Month"></param>
+            <param name="monthType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.ProjAdvanceInfo.GetProjFundPayment(System.String,System.Int32)">
+            <summary>
+            月资金支付合计
+            </summary>
+            <param name="projGuid"></param>
+            <param name="month"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.ProjAdvanceInfo.GetProjInvestFromDetails(System.String,System.Int32)">
+            <summary>
+            支付金额来源
+            </summary>
+            <param name="projGuid"></param>
+            <param name="month"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.ProjJointAcceptance">
+            <summary>
+            联合验收
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.ProjJointAcceptance.GetGuidByProjGuid(System.String,System.String)">
+            <summary>
+            根据项目Guid获取Guid
+            </summary>
+            <param name="projGuid"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.SealedOpinionProjGuid">
+            <summary>
+            项目封存
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.SealedOpinionProjGuid.IsExistByProjGuid(System.String)">
+            <summary>
+            根据项目Guid查询项目是否已申请封存
+            </summary>
+            <param name="projGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.SealedOpinionProjGuid.GetSealedOpinion(System.String)">
+            <summary>
+            获取发改回复的验收封存信息
+            </summary>
+            <param name="projGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.SelectUnitAndPerson">
+            <summary>
+            选择单位及单位人员
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.SelectUnitAndPerson.GetBuilderUnitsByProjGuid(System.String,System.String)">
+            <summary>
+            根据项目主键返回参建单位
+            </summary>
+            <param name="projGuid">项目主键</param>
+            <param name="uName">参建单位名字查询条件</param>
+            <returns>参建单位的DataTable</returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.SelectUnitAndPerson.GetPersonsByUnit(System.String,System.String)">
+            <summary>
+            通过参建单位主键获取参建人员
+            </summary>
+            <param name="projGuid">项目主键</param>
+            <param name="UnitGuid">参建单位主键</param>
+            <returns>DataTable参建人员集合</returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.ShowConfrimMileStone">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.ShowConfrimMileStone.ShowConfrim(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="guid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.SignedContract">
+            <summary>
+            签订合同
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.SignedContract.GetGuidsByStrGuid(System.String)">
+            <summary>
+            通过合同主键返回合同关联概算主键
+            </summary>
+            <param name="strGuid">合同主键</param>
+            <returns>概算主键集合</returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.SignedContract.GetJsonByProjGuid(System.String)">
+            <summary>
+            通过项目Guid取招标事项Json串
+            </summary>
+            <param name="ProjGuid">项目主键</param>
+            <returns>招标事项Json数据集</returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.SignedContract.GetInviteNameByGuid(System.String)">
+            <summary>
+            通过招标主键获取招标名称
+            </summary>
+            <param name="InviteGuid">招标主键</param>
+            <returns>招标名称</returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.SignedContract.GetInviteJsonByGuid(System.String)">
+            <summary>
+            通过招标主键获取招标名称集合
+            </summary>
+            <param name="InviteGuids">招标主键集合</param>
+            <returns>招标名称集合</returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.SignedContract.GetContractInfoByGuid(System.String)">
+            <summary>
+            通过合同主键返回合同名称和合同编号
+            </summary>
+            <param name="ContractGuid">合同主键</param>
+            <returns>合同名称和编号</returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.Training">
+            <summary>
+            培训登记
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.Training.GetSupOffice(System.String)">
+            <summary>
+            根据部门名称获取分管处室
+            </summary>
+            <param name="UserTitle"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.Training.GetSupOfficeByGuid(System.String)">
+            <summary>
+            根据主键获取分管处室
+            </summary>
+            <param name="OfficeGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.Training.GetDataTableByProjGuids(System.String)">
+            <summary>
+            通过项目名称集合获取项目主键，名字集合
+            </summary>
+            <param name="ProjName">项目名称集合</param>
+            <returns>主键，名字DataTable</returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.UnitsExamine">
+            <summary>
+            各单位检查信息
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.UnitsExamine.UpdateResultByGuid(System.String,System.String,System.String)">
+            <summary>
+            通过动态行主键更新整改结果及时间
+            </summary>
+            <param name="Guid">动态行主键</param>
+            <param name="Results">整改结果</param>
+            <param name="RectTime">整改时间</param>
+            <returns>影响行数</returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.UnitsExamine.InsertResult(System.String,System.String,System.String,System.String)">
+            <summary>
+            插入一个问题的整改结果信息
+            </summary>
+            <param name="RefGuid"></param>
+            <param name="Results"></param>
+            <param name="RectTime"></param>
+            <param name="DoneSituation"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.UnitsExamine.GetIssueResults(System.String)">
+            <summary>
+            获取某一问题的所有整改结果信息
+            </summary>
+            <param name="RefGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.UpdateAdjustment">
+            <summary>
+            更新批复关联的概算调整
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.UpdateAdjustment.UpdateAdjustmentRelevance(System.String,System.String,System.String)">
+            <summary>
+            批复关联的概算调整
+            </summary>
+            <param name="tableName"></param>
+            <param name="where"></param>
+            <param name="CheckGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yawei.ProjectCore.WorkRemind">
+            <summary>
+            项目催报
+            </summary>
+        </member>
+        <member name="M:Yawei.ProjectCore.WorkRemind.GetThiMonthRemind(System.String@)">
+            <summary>
+            返回当月催报
+            </summary>
+            <returns>催报集合</returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.WorkRemind.GetRemindStatus(System.String,System.String)">
+            <summary>
+            返回催报状态
+            </summary>
+            <param name="RemindGuid">催报主键</param>
+            <param name="UserGuid">用户主键</param>
+            <returns>催报状态集合</returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.WorkRemind.UpdateRemindStatus(System.String,System.String)">
+            <summary>
+            更新催报状态
+            </summary>
+            <param name="RemindGuid">催报主键</param>
+            <param name="UserGuid">用户主键</param>
+            <returns>影响行数</returns>
+        </member>
+        <member name="M:Yawei.ProjectCore.WorkRemind.UpdateRemindSysStatus(System.String)">
+            <summary>
+            更新催报已读
+            </summary>
+            <param name="RemindGuid">催报主键</param>
+            <returns>影响行数</returns>
+        </member>
+    </members>
+</doc>

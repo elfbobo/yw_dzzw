@@ -1,0 +1,130 @@
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\obj\Debug\WebApp.csprojResolveAssemblyReference.cache
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\bin\WebApp.dll.config
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\bin\WebApp.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\bin\WebApp.pdb
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\bin\Newtonsoft.Json.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\bin\Yawei.DataAccess.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\bin\Yawei.Domain.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\bin\Yawei.FacadeCore.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\bin\Yawei.IndustryManagerCore.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\bin\Yawei.ProjectCore.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\bin\Yawei.SSOLib.Common.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\bin\Yawei.SSOLib.Cryptography.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\bin\Yawei.SSOLib.PSO.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\bin\Yawei.StatisticsCore.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\bin\Yawei.SupportCore.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\bin\Oracle.DataAccess.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\bin\EntityFramework.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\bin\Yawei.DataAccess.pdb
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\bin\Yawei.Domain.pdb
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\bin\Yawei.FacadeCore.pdb
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\bin\Yawei.FacadeCore.xml
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\bin\Yawei.IndustryManagerCore.pdb
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\bin\Yawei.IndustryManagerCore.xml
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\bin\Yawei.ProjectCore.pdb
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\bin\Yawei.ProjectCore.xml
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\bin\Yawei.StatisticsCore.pdb
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\bin\Yawei.SupportCore.pdb
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\bin\Newtonsoft.Json.xml
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\obj\Debug\WebApp.dll
+D:\工作\WorkCode\VS2013\泰州市电子政务项目管理系统\WebApp\obj\Debug\WebApp.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\WebApp\bin\WebApp.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\WebApp\bin\WebApp.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\WebApp\bin\Newtonsoft.Json.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\WebApp\bin\Yawei.DataAccess.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\WebApp\bin\Yawei.Domain.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\WebApp\bin\Yawei.FacadeCore.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\WebApp\bin\Yawei.IndustryManagerCore.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\WebApp\bin\Yawei.ProjectCore.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\WebApp\bin\Yawei.SSOLib.Common.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\WebApp\bin\Yawei.SSOLib.Cryptography.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\WebApp\bin\Yawei.SSOLib.PSO.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\WebApp\bin\Yawei.StatisticsCore.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\WebApp\bin\Yawei.SupportCore.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\WebApp\bin\Oracle.DataAccess.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\WebApp\bin\Yawei.DataAccess.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\WebApp\bin\Yawei.Domain.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\WebApp\bin\Yawei.FacadeCore.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\WebApp\bin\Yawei.FacadeCore.xml
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\WebApp\bin\Yawei.IndustryManagerCore.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\WebApp\bin\Yawei.IndustryManagerCore.xml
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\WebApp\bin\Yawei.ProjectCore.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\WebApp\bin\Yawei.ProjectCore.xml
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\WebApp\bin\Yawei.StatisticsCore.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\WebApp\bin\Yawei.SupportCore.pdb
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\WebApp\bin\Newtonsoft.Json.xml
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\WebApp\obj\Debug\WebApp.csprojResolveAssemblyReference.cache
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\WebApp\obj\Debug\WebApp.dll
+G:\项目文档\泰州市政府\泰州电子政务管理系统\泰州市电子政务项目管理系统\WebApp\obj\Debug\WebApp.pdb
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\WebApp.dll
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\WebApp.pdb
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\Newtonsoft.Json.dll
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\SupportLib.dll
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\Yawei.DataAccess.dll
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\Yawei.Domain.dll
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\Yawei.FacadeCore.dll
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\Yawei.IndustryManagerCore.dll
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\Yawei.ProjectCore.dll
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\Yawei.SSOLib.Common.dll
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\Yawei.SSOLib.Cryptography.dll
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\Yawei.SSOLib.PSO.dll
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\Yawei.StatisticsCore.dll
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\Yawei.SupportCore.dll
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\Oracle.DataAccess.dll
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\NPOI.dll
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\ICSharpCode.SharpZipLib.dll
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\Yawei.DataAccess.pdb
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\Yawei.Domain.pdb
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\Yawei.FacadeCore.pdb
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\Yawei.FacadeCore.xml
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\Yawei.IndustryManagerCore.pdb
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\Yawei.IndustryManagerCore.xml
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\Yawei.ProjectCore.pdb
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\Yawei.ProjectCore.xml
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\Yawei.StatisticsCore.pdb
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\Yawei.SupportCore.pdb
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\SupportLib.pdb
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\Newtonsoft.Json.xml
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\NPOI.xml
+G:\workspace\C# workspace\dzzwcode\WebApp\obj\Debug\WebApp.csprojResolveAssemblyReference.cache
+G:\workspace\C# workspace\dzzwcode\WebApp\obj\Debug\WebApp.dll
+G:\workspace\C# workspace\dzzwcode\WebApp\obj\Debug\WebApp.pdb
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\NPOI.OOXML.dll
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\NPOI.OpenXmlFormats.dll
+G:\workspace\C# workspace\dzzwcode\WebApp\bin\NPOI.OpenXml4Net.dll
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\WebApp.dll
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\WebApp.pdb
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\Newtonsoft.Json.dll
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\SupportLib.dll
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\Yawei.DataAccess.dll
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\Yawei.Domain.dll
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\Yawei.FacadeCore.dll
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\Yawei.IndustryManagerCore.dll
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\Yawei.ProjectCore.dll
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\Yawei.SSOLib.Common.dll
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\Yawei.SSOLib.Cryptography.dll
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\Yawei.SSOLib.PSO.dll
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\Yawei.StatisticsCore.dll
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\Yawei.SupportCore.dll
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\Oracle.DataAccess.dll
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\NPOI.dll
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\NPOI.OOXML.dll
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\ICSharpCode.SharpZipLib.dll
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\NPOI.OpenXmlFormats.dll
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\NPOI.OpenXml4Net.dll
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\Yawei.DataAccess.pdb
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\Yawei.Domain.pdb
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\Yawei.FacadeCore.pdb
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\Yawei.FacadeCore.xml
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\Yawei.IndustryManagerCore.pdb
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\Yawei.IndustryManagerCore.xml
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\Yawei.ProjectCore.pdb
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\Yawei.ProjectCore.xml
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\Yawei.StatisticsCore.pdb
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\Yawei.SupportCore.pdb
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\SupportLib.pdb
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\Newtonsoft.Json.xml
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\bin\NPOI.xml
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\obj\Debug\WebApp.csprojResolveAssemblyReference.cache
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\obj\Debug\WebApp.dll
+G:\workspace\C# workspace\dzzwcode\yw_dzzw\WebApp\obj\Debug\WebApp.pdb
